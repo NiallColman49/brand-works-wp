@@ -1,0 +1,953 @@
+{% extends 'layouts/base.twig' %}
+
+{% block content %}
+    <!-- Hero section -->
+        <section
+            class="relative"
+            style="
+                background-image: url('{{ theme.uri }}/assets/images/assets/images/hero/morrisons-hero.jpg');
+                object-fit: cover;
+                object-position: center;
+                width: 100%;
+                height: 100%;
+            "
+        >
+            <div
+                class="absolute top-0 left-0 w-full h-full bg-dark-green/90 z-[1] mix-blend-multiply"
+            ></div>
+
+            <div class="container">
+                <div
+                    class="pt-10 lg:pt-[100px] pb-10 lg:pb-[84px] relative z-10"
+                >
+                    <div class="w-full flex flex-col items-center relative">
+                        <h2
+                            class="text-light-green uppercase text-sm text-center tracking-[0.3em]"
+                        >
+                            PRINT, SIGNAGE AND ARCHITECTURAL WRAPPING FOR EACH
+                            SECTOR
+                        </h2>
+
+                        <h1
+                            class="font-bold uppercase text-[32px] leading-[35px] lg:leading-[65px] lg:text-[70px] text-center pt-10 lg:pt-14"
+                        >
+                            <span class="text-white">SECTORS<br /></span
+                            ><span class="text-light-green">WE WORK WITH</span>
+                        </h1>
+
+                        <p
+                            class="text-white font-medium text-[22px] leading-[30px] text-center pt-10 lg:pt-[60px] lg:w-[57%]"
+                        >
+                            From bustling retail stores to calming healthcare
+                            facilities, we help brands of all stripes shout loud
+                            (or whisper elegantly) through impactful signage and
+                            print solutions.
+                        </p>
+                    </div>
+
+                    <!-- Anchored link buttons -->
+                    <div
+                        class="flex flex-wrap gap-x-9 gap-y-6 pt-7 justify-center relative w-full lg:w-3/4 mx-auto"
+                    >
+                        <a href="#commercial" class="outline-button"
+                            ><span>COMMERCIAL</span></a
+                        >
+
+                        <a href="#retail" class="outline-button"
+                            ><span>RETAIL</span></a
+                        >
+
+                        <a href="#sport" class="outline-button"
+                            ><span>SPORT</span></a
+                        >
+
+                        <a href="#exhibitions" class="outline-button"
+                            ><span>EXHIBITIONS</span></a
+                        >
+
+                        <a href="#health-care" class="outline-button"
+                            ><span>HEALTH CARE</span></a
+                        >
+
+                        <a href="#education" class="outline-button"
+                            ><span>EDUCATION</span></a
+                        >
+
+                        <a href="#hospitality" class="outline-button"
+                            ><span>HOSPITALITY</span></a
+                        >
+
+                        <a href="#construction" class="outline-button"
+                            ><span>CONSTRUCTION</span></a
+                        >
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Two column image and text - image left -->
+        <section class="bg-dark-green pt-10 pb-10 lg:pb-20" id="commercial">
+            <div class="container">
+                <div class="flex flex-wrap lg:flex-nowrap gap-10 lg:gap-[60px]">
+                    <div
+                        class="w-full lg:w-1/2 lg:min-h-[632px] rounded-[20px] overflow-hidden"
+                    >
+                        <img
+                            src="{{ theme.uri }}/assets/images/assets/images/our-work/Brick Wrap_1.jpg"
+                            alt="brick wrap"
+                            class="object-cover object-center w-full h-full"
+                        />
+                    </div>
+                    <div class="w-full lg:w-1/2">
+                        <h2
+                            class="font-bold uppercase text-[32px] leading-[35px] lg:leading-[65px] lg:text-[70px] text-white"
+                        >
+                            COMMERCIAL
+                        </h2>
+
+                        <h3
+                            class="font-medium text-[32px] leading-[35px] pt-8 lg:pt-11 text-light-green"
+                        >
+                            Make Your New Office Speak Volumes:<br />
+                            Start with Your Brand...
+                        </h3>
+
+                        <p class="text-white pt-10">
+                            Moving into a new office? It's easy to get caught up
+                            in furniture and layouts. But before you finalize
+                            those plans, take a step back and consider your
+                            interior branding strategy. These initial decisions
+                            will have a dramatic impact on the entire space's
+                            feel and how people interact with it. Will it foster
+                            collaboration? Showcase your company culture?<br /><br />
+                            Our team thrives on working with clients from the
+                            very beginning of the design process. We believe
+                            your office surfaces are blank pages waiting to tell
+                            your brand story. From employees and clients to
+                            potential hires, your space should visually
+                            communicate your company's identity. We have
+                            extensive experience creating unique spaces that
+                            bring brands to life, and we'd love to help you do
+                            the same.<br /><br />
+                            Don't be afraid to get creative – we've tackled all
+                            sorts of requests and have a team of highly skilled
+                            installers to ensure your vision becomes reality
+                            with minimal disruption to your workday.
+                        </p>
+
+                        <div class="hidden lg:block pt-10">
+                            <a
+                                href="{{ site.url}}/contact-us"
+                                target="_self"
+                                class="solid-button-tall max-w-max"
+                            >
+                                START YOUR PROJECT
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Two column image and text - image right -->
+        <section
+            class="bg-gradient-to-b from-dark-green from-0 via-dark-green via-70% to-white to-100% pt-10 pb-10 lg:pb-20"
+            id="retail"
+        >
+            <div class="container">
+                <div class="flex flex-wrap lg:flex-nowrap gap-10 lg:gap-[60px]">
+                    <div class="w-full lg:w-1/2">
+                        <h2
+                            class="font-bold uppercase text-[32px] leading-[35px] lg:leading-[65px] lg:text-[70px] text-white"
+                        >
+                            RETAIL
+                        </h2>
+
+                        <h3
+                            class="font-medium text-[32px] leading-[35px] pt-8 lg:pt-11 text-light-green"
+                        >
+                            Attract, Engage, Convert:<br />
+                            Design Solutions for Retail.
+                        </h3>
+
+                        <p class="text-white pt-10">
+                            We specialise in creating dynamic spaces for the
+                            retail industry! Our passionate design and
+                            installation team thrives on transforming your
+                            vision into reality, whether it's a single store, or
+                            multiple shop fit-outs.<br /><br />
+                            Understanding the importance of customer attraction,
+                            we offer eye-catching solutions like illuminated
+                            exterior signage and projecting signs to grab
+                            attention from afar. We also know impactful window
+                            displays are key for showcasing promotions and new
+                            product lines. Our team will work with you to plan
+                            engaging campaigns and schedule timely installations
+                            to keep your displays fresh.<br /><br />
+                            Looking for inspiration? Here are some of our most
+                            popular services for retail and hospitality clients:
+                            Signage, A-boards, feature walls, neon signs, window
+                            graphics, metal and rusted signs, projecting signs,
+                            and freestanding graphics. Don't be limited by this
+                            list, though! We're always excited by new
+                            challenges, so get in touch and let's discuss your
+                            unique vision.
+                        </p>
+
+                        <div class="hidden lg:block pt-10">
+                            <a
+                                href="{{ site.url}}/contact-us"
+                                target="_self"
+                                class="solid-button-tall max-w-max"
+                            >
+                                ATTRACT MORE CUSTOMERS
+                            </a>
+                        </div>
+                    </div>
+
+                    <div
+                        class="w-full lg:w-1/2 lg:min-h-[632px] rounded-[20px] overflow-hidden"
+                    >
+                        <img
+                            src="{{ theme.uri }}/assets/images/assets/images/flying-tiger.png"
+                            alt="Flying tiger"
+                            class="object-cover object-center w-full h-full"
+                        />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Two column image and text - image left -->
+        <section class="pt-10 lg:pt-20 pb-10 lg:pb-20" id="sport">
+            <div class="container">
+                <div class="flex flex-wrap lg:flex-nowrap gap-10 lg:gap-[60px]">
+                    <div
+                        class="w-full lg:w-1/2 lg:min-h-[632px] rounded-[20px] overflow-hidden"
+                    >
+                        <img
+                            src="{{ theme.uri }}/assets/images/assets/images/locker-room.png"
+                            alt="Locker room"
+                            class="object-cover object-center w-full h-full"
+                        />
+                    </div>
+                    <div class="w-full lg:w-1/2">
+                        <h2
+                            class="font-bold uppercase text-[32px] leading-[35px] lg:leading-[65px] lg:text-[70px] text-light-green"
+                        >
+                            SPORT
+                        </h2>
+
+                        <h3
+                            class="font-medium text-[32px] leading-[35px] pt-8 lg:pt-11 text-dark-green"
+                        >
+                            From Locker Room to Legend: Branding Solutions for
+                            Sports.
+                        </h3>
+
+                        <p class="pt-10">
+                            At Brand Works, we've been a proud partner to the
+                            sports industry for years. From nationwide gyms and
+                            local sports centers to iconic teams like the
+                            Castleford Tigers, we understand the unique needs of
+                            athletic spaces.<br /><br />
+                            We help you create an environment that inspires and
+                            motivates athletes and fans alike. Whether it's
+                            crafting eye-catching promotional signage to draw
+                            new members, implementing clear wayfinding signs to
+                            navigate facilities with ease, or utilizing floor,
+                            wall, and window graphics to showcase team spirit or
+                            brand messaging, our team is here to bring your
+                            vision to life.<br /><br />
+                            We're also experts in maximizing your existing
+                            space. Need to revamp your tired changing rooms? We
+                            can transform them with high-impact vinyl wrapping,
+                            saving you thousands on costly rip-out and
+                            replacement fees.<br /><br />
+                            Let Brand Works help you score big with impactful
+                            and cost-effective branding solutions.
+                        </p>
+
+                        <div class="hidden lg:block pt-10">
+                            <a
+                                href="{{ site.url}}/contact-us"
+                                target="_self"
+                                class="solid-button-tall max-w-max"
+                            >
+                                ENQUIRE
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Two column image and text - image right -->
+        <section class="pt-10 pb-10 lg:pb-28" id="exhibitions">
+            <div class="container">
+                <div class="flex flex-wrap lg:flex-nowrap gap-10 lg:gap-[60px]">
+                    <div class="w-full lg:w-1/2">
+                        <h2
+                            class="font-bold uppercase text-[32px] leading-[35px] lg:leading-[65px] lg:text-[70px] text-light-green"
+                        >
+                            EXHIBITIONS
+                        </h2>
+
+                        <h3
+                            class="font-medium text-[32px] leading-[35px] pt-8 lg:pt-11 text-dark-green"
+                        >
+                            Grab Attention, Generate Leads.
+                        </h3>
+
+                        <p class="text-dark-green pt-10">
+                            Standing out in a crowded exhibition hall can be a
+                            challenge. At Brand Works, we've partnered with
+                            countless exhibitors to create show-stopping
+                            displays that grab attention and leave a lasting
+                            impression. <br /><br />We understand the unique
+                            needs of exhibition branding. Our team will
+                            collaborate with you to develop a cohesive strategy
+                            that aligns with your brand identity and marketing
+                            goals. From eye-catching pop-up booths and
+                            exhibition stands to impactful roller banners and
+                            pull-up displays, we offer a comprehensive range of
+                            solutions to showcase your products or services in
+                            the best light possible.<br /><br />
+                            More than just graphics: We go beyond traditional
+                            signage to elevate your exhibition experience. We
+                            can create interactive displays, product launches,
+                            and digital signage solutions to truly engage with
+                            potential customers.
+                        </p>
+
+                        <div class="hidden lg:block pt-10">
+                            <a
+                                href="{{ site.url}}/contact-us"
+                                target="_self"
+                                class="solid-button-tall max-w-max"
+                            >
+                                DRIVE MORE LEADS
+                            </a>
+                        </div>
+                    </div>
+
+                    <div
+                        class="w-full lg:w-1/2 lg:min-h-[632px] rounded-[20px] overflow-hidden"
+                    >
+                        <img
+                            src="{{ theme.uri }}/assets/images/assets/images/flying-tiger.png"
+                            alt="Flying tiger"
+                            class="object-cover object-center w-full h-full"
+                        />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Return on investment section -->
+        <section class="py-10 lg:py-20 bg-dark-green">
+            <div class="container">
+                <h2
+                    class="w-full font-bold uppercase text-[32px] leading-[35px] lg:leading-[65px] lg:text-[70px] text-light-green text-center pb-10 lg:pb-20"
+                >
+                    RETURN ON INVESTMENT
+                </h2>
+
+                <div
+                    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4"
+                >
+                    <div
+                        class="col-span-1 border border-white rounded-[20px] flex flex-col items-center text-white p-6 lg:p-10"
+                    >
+                        <img
+                            src="{{ theme.uri }}/assets/images/assets/images/investment-icons/pound-up.svg"
+                            alt="Pound increase"
+                            data-mh="icon"
+                        />
+
+                        <h3
+                            data-mh="title"
+                            class="font-bold text-lg text-light-green leading-[26px] text-center pt-8"
+                        >
+                            LEAD GENERATION AND SALES GROWTH
+                        </h3>
+
+                        <p
+                            data-mh="content"
+                            class="text-white text-center pt-6"
+                        >
+                            Signage and graphics are silent salespeople. From
+                            eye-catching displays that grab attention to
+                            informative wayfinding that smooths the customer
+                            journey, these visual tools can tell your brand
+                            story, generate leads with CTAs, and promote
+                            products – all fueling your sales engine and
+                            boosting growth across any industry.
+                        </p>
+                    </div>
+
+                    <div
+                        class="col-span-1 border border-white rounded-[20px] flex flex-col items-center text-white p-6 lg:p-10"
+                    >
+                        <img
+                            src="{{ theme.uri }}/assets/images/assets/images/investment-icons/person.svg"
+                            alt="Person"
+                            data-mh="icon"
+                        />
+
+                        <h3
+                            data-mh="title"
+                            class="font-bold text-lg text-light-green leading-[26px] text-center pt-8"
+                        >
+                            INCREASED BRAND AWARENESS
+                        </h3>
+
+                        <p
+                            class="text-white text-center pt-6"
+                            data-mh="content"
+                        >
+                            Eye-catching designs grab attention in any
+                            environment, while clear messaging reinforces your
+                            brand identity. From storefront signs that draw
+                            customers in to strategically placed logos and
+                            graphics, consistent visual elements throughout your
+                            space create a memorable brand experience, ensuring
+                            you stay top-of-mind and drive long-term
+                            recognition.
+                        </p>
+                    </div>
+
+                    <div
+                        class="col-span-1 border border-white rounded-[20px] flex flex-col items-center text-white p-6 lg:p-10"
+                    >
+                        <img
+                            src="{{ theme.uri }}/assets/images/assets/images/investment-icons/piggy-bank.svg"
+                            alt="Piggy bank"
+                            data-mh="icon"
+                        />
+
+                        <h3
+                            data-mh="title"
+                            class="font-bold text-lg text-light-green leading-[26px] text-center pt-8"
+                        >
+                            COST EFFECTIVE LONG TERM ADVERTISING
+                        </h3>
+
+                        <p
+                            data-mh="content"
+                            class="text-white text-center pt-6"
+                        >
+                            In a world bombarded by fleeting ads, signage and
+                            graphics offer a refreshingly cost-effective and
+                            long-term advertising solution. Compared to pricier
+                            options with limited lifespans, a well-designed sign
+                            or set of graphics can work wonders for brand
+                            awareness over a much longer period of time. Unlike
+                            disposable ads, high-quality signage is built to
+                            last, requiring minimal maintenance.
+                        </p>
+                    </div>
+
+                    <div
+                        class="col-span-1 border border-white rounded-[20px] flex flex-col items-center text-white p-6 lg:p-10"
+                    >
+                        <img
+                            src="{{ theme.uri }}/assets/images/assets/images/investment-icons/merit.svg"
+                            alt="Merit"
+                            data-mh="icon"
+                        />
+
+                        <h3
+                            data-mh="title"
+                            class="font-bold text-lg text-light-green leading-[26px] text-center pt-8"
+                        >
+                            IMPROVED BRAND CREDIBILITY
+                        </h3>
+
+                        <p
+                            data-mh="content"
+                            class="text-white text-center pt-6"
+                        >
+                            In today's digital age, trust is paramount. Signage
+                            and graphics can be powerful tools for building
+                            brand credibility and establishing yourself as a
+                            leader in your industry. High-quality, professional
+                            design elements communicate attention to detail and
+                            a commitment to excellence. Clear, informative
+                            signage demonstrates respect for your customers'
+                            time and experience.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Two column image and text - image left -->
+        <section class="pt-10 lg:pt-20 pb-10 lg:pb-20" id="healthcare">
+            <div class="container">
+                <div class="flex flex-wrap lg:flex-nowrap gap-10 lg:gap-[60px]">
+                    <div
+                        class="w-full lg:w-1/2 lg:min-h-[632px] rounded-[20px] overflow-hidden"
+                    >
+                        <img
+                            src="{{ theme.uri }}/assets/images/assets/images/sectors- healthcare.jpg"
+                            alt="Locker room"
+                            class="object-cover object-center w-full h-full"
+                        />
+                    </div>
+                    <div class="w-full lg:w-1/2">
+                        <h2
+                            class="font-bold uppercase text-[32px] leading-[35px] lg:leading-[65px] lg:text-[70px] text-light-green"
+                        >
+                            HEALTHCARE
+                        </h2>
+
+                        <h3
+                            class="font-medium text-[32px] leading-[35px] pt-8 lg:pt-11 text-dark-green"
+                        >
+                            Create a Welcoming Healthcare Space: Branding
+                            Solutions for NHS & Private Practices
+                        </h3>
+
+                        <p class="pt-10">
+                            At Brand Works, we're proud to support the
+                            healthcare industry across the UK. We've partnered
+                            with numerous NHS sites, implementing clear and
+                            effective wayfinding signage to ensure a smooth and
+                            stress-free experience for patients and staff alike.
+                            Our national reach ensures consistent branding and
+                            signage systems across multiple locations.<br /><br />
+                            Responding to evolving needs: During the COVID-19
+                            pandemic, we stepped up to support the healthcare
+                            industry by rapidly manufacturing and installing
+                            thousands of protective COVID screens. These screens
+                            helped safeguard staff and patients, demonstrating
+                            our commitment to public health.<br /><br />
+                            Beyond the NHS: We understand the diverse needs of
+                            the entire healthcare sector. We've partnered with
+                            individual pharmacies, dentists, physiotherapists,
+                            and other private practices to create welcoming and
+                            professional environments. From the NHS to
+                            individual practices, Brand Works is your partner in
+                            creating a clear, welcoming, and safe healthcare
+                            environment. Contact us today to discuss your
+                            specific needs!
+                        </p>
+
+                        <div class="hidden lg:block pt-10">
+                            <a
+                                href="{{ site.url}}/contact-us"
+                                target="_self"
+                                class="solid-button-tall max-w-max"
+                            >
+                                GET IN TOUCH
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Two column image and text - image right -->
+        <section class="pt-10 pb-10 lg:pb-20" id="education">
+            <div class="container">
+                <div class="flex flex-wrap lg:flex-nowrap gap-10 lg:gap-[60px]">
+                    <div class="w-full lg:w-1/2">
+                        <h2
+                            class="font-bold uppercase text-[32px] leading-[35px] lg:leading-[65px] lg:text-[70px] text-light-green"
+                        >
+                            EDUCATION
+                        </h2>
+
+                        <h3
+                            class="font-medium text-[32px] leading-[35px] pt-8 lg:pt-11 text-dark-green"
+                        >
+                            Impactful branding at a budget-friendly price. Get
+                            your message out there, the smart, simple and
+                            cost-effective way.
+                        </h3>
+
+                        <p class="text-dark-green pt-10">
+                            At Brand Works, we understand the power of creating
+                            inspiring learning environments. We've partnered
+                            with a wide range of educational institutions – from
+                            nurseries and primary schools to universities – to
+                            develop engaging and informative branding solutions.
+                            <br /><br />
+                            We can help you:<br /><br />
+                            <li>Foster a Positive Learning Environment</li>
+                            <li>Enhance Wayfinding</li>
+                            <li>Showcase Your School Identity</li>
+                            <li>Boost School Spirit</li>
+                            <li>Promote Safety and Security</li>
+                            <br />
+                            Beyond traditional signage: We can also help create
+                            interactive learning displays, murals, and even
+                            branded furniture to truly transform your
+                            educational space.<br /><br />
+                            Let Brand Works be your partner in creating
+                            inspiring learning environments that empower
+                            students and faculty alike. Contact us today to
+                            discuss your vision!
+                        </p>
+
+                        <div class="hidden lg:block pt-10">
+                            <a
+                                href="{{ site.url}}/contact-us"
+                                target="_self"
+                                class="solid-button-tall max-w-max"
+                            >
+                                ENQUIRE
+                            </a>
+                        </div>
+                    </div>
+
+                    <div
+                        class="w-full lg:w-1/2 lg:min-h-[632px] rounded-[20px] overflow-hidden"
+                    >
+                        <img
+                            src="{{ theme.uri }}/assets/images/assets/images/sectors-education.jpg"
+                            alt="Flying tiger"
+                            class="object-cover object-center w-full h-full"
+                        />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trusted by logos slider -->
+        <section class="bg-dark-green pt-10 lg:pt-20">
+            <div class="container">
+                <div class="border-2 border-light-green rounded-3xl">
+                    <span
+                        class="block font-bold uppercase text-[32px] leading-[35px] text-center text-white pt-12"
+                        >Trusted by</span
+                    >
+
+                    <div
+                        class="js-trusted-by-slider py-10 w-full flex justify-center"
+                    >
+                        <div class="flex justify-center items-center">
+                            <img
+                                src="{{ theme.uri }}/assets/images/assets/logo/asda.png"
+                                alt="Asda"
+                                class="max-w-[216px] max-h-[126px] mx-auto"
+                            />
+                        </div>
+                        <div class="flex justify-center items-center">
+                            <img
+                                src="{{ theme.uri }}/assets/images/assets/logo/clarks.png"
+                                alt="Clarks"
+                                class="max-w-[216px] max-h-[126px] mx-auto"
+                            />
+                        </div>
+                        <div class="flex justify-center items-center">
+                            <img
+                                src="{{ theme.uri }}/assets/images/assets/logo/sports-direct.png"
+                                alt="Sports Direct"
+                                class="max-w-[216px] max-h-[126px] mx-auto"
+                            />
+                        </div>
+                        <div class="flex justify-center items-center">
+                            <img
+                                src="{{ theme.uri }}/assets/images/assets/logo/ag.png"
+                                alt="AG"
+                                class="max-w-[216px] max-h-[126px] mx-auto"
+                            />
+                        </div>
+                        <div class="flex justify-center items-center">
+                            <img
+                                src="{{ theme.uri }}/assets/images/assets/logo/boots.png"
+                                alt="Boots"
+                                class="max-w-[216px] max-h-[126px] mx-auto"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Two column image and text - image right -->
+        <section
+            class="bg-dark-green pt-10 lg:pt-20 pb-10 lg:pb-20"
+            id="hospitality"
+        >
+            <div class="container">
+                <div class="flex flex-wrap lg:flex-nowrap gap-10 lg:gap-[60px]">
+                    <div class="w-full lg:w-1/2">
+                        <h2
+                            class="font-bold uppercase text-[32px] leading-[35px] lg:leading-[65px] lg:text-[70px] text-white"
+                        >
+                            HOSPITALITY
+                        </h2>
+
+                        <h3
+                            class="font-medium text-[32px] leading-[35px] pt-8 lg:pt-11 text-light-green"
+                        >
+                            Memorable Spaces, Killer Branding.
+                        </h3>
+
+                        <div class="pt-10 text-white">
+                            We know the power of a well-designed hospitality
+                            space. We've partnered with countless hotels,
+                            restaurants, bars, and leisure facilities to create
+                            inviting and memorable experiences for guests.<br /><br />
+                            From first impressions to lasting memories, we can
+                            help you:<br />
+                            <li class="text-white">
+                                Craft a Cohesive Brand Identity
+                            </li>
+                            <li class="text-white">
+                                Elevate Your Guest Experience
+                            </li>
+                            <li class="text-white">Showcase Your Offerings</li>
+                            <li class="text-white">Boost Brand Recognition</li>
+                            <li class="text-white">Maximize Your Space</li>
+                            <br />
+                            We go beyond the basics:<br />
+                            We understand the importance of creating an
+                            Instagrammable atmosphere. Let's collaborate on
+                            unique design features and photo-worthy moments that
+                            will have your guests raving online.<br /><br />
+                            Brand Works is your one-stop shop for all your
+                            hospitality branding needs. Contact us to discuss
+                            how we can help you create a space that leaves a
+                            lasting impression!
+                        </div>
+
+                        <div class="hidden lg:block pt-10">
+                            <a
+                                href="{{ site.url}}/contact-us"
+                                target="_self"
+                                class="solid-button-tall max-w-max"
+                            >
+                                ATTRACT MORE CUSTOMERS
+                            </a>
+                        </div>
+                    </div>
+
+                    <div
+                        class="w-full lg:w-1/2 lg:min-h-[632px] rounded-[20px] overflow-hidden"
+                    >
+                        <img
+                            src="{{ theme.uri }}/assets/images/assets/images/sectors-hospitality.jpg"
+                            alt="Locker room"
+                            class="object-cover object-center w-full h-full"
+                        />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Two column image and text - image left -->
+        <section class="bg-dark-green pt-10" id="construction">
+            <div class="container">
+                <div class="flex flex-wrap lg:flex-nowrap gap-10 lg:gap-[60px]">
+                    <div
+                        class="w-full lg:w-1/2 lg:min-h-[632px] rounded-[20px] overflow-hidden"
+                    >
+                        <img
+                            src="{{ theme.uri }}/assets/images/assets/images/sectors-construction.jpg"
+                            alt="Flying tiger"
+                            class="object-cover object-center w-full h-full"
+                        />
+                    </div>
+                    <div class="w-full lg:w-1/2">
+                        <h2
+                            class="font-bold uppercase text-[32px] leading-[35px] lg:leading-[65px] lg:text-[70px] text-white"
+                        >
+                            CONSTRUCTION
+                        </h2>
+
+                        <h3
+                            class="font-medium text-[32px] leading-[35px] pt-8 lg:pt-11 text-light-green"
+                        >
+                            Hoarding Heroes & Beyond: Brand Works for
+                            Construction Sites.
+                        </h3>
+
+                        <p class="text-white pt-10">
+                            Successful construction project is about more than
+                            just bricks and mortar. It's about creating a strong
+                            visual presence that reflects your professionalism
+                            and sets the stage for a smooth project flow.
+                            <br /><br />We're your one-stop shop for all your
+                            construction site branding needs. While we're
+                            construction site hoarding champions (seriously,
+                            we've wrapped enough hoarding to fence in a small
+                            country!), we also offer a wide range of branding
+                            solutions to ensure your entire project is visually
+                            cohesive.
+                        </p>
+
+                        <div class="hidden lg:block pt-10">
+                            <a
+                                href="{{ site.url}}/contact-us"
+                                target="_self"
+                                class="solid-button-tall max-w-max"
+                            >
+                                START YOUR PROJECT
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Infinite marquee -->
+        <section class="bg-dark-green pt-14 lg:pt-20 pb-2 lg:pb-8">
+            <div
+                class="marquee relative w-full max-w-full h-[124px] lg:h-[160px] overflow-x-hidden"
+            >
+                <div
+                    class="track absolute whitespace-nowrap will-change-transform"
+                >
+                    <div class="content font-bold text-white flex items-center">
+                        <span class="text-[60px] lg:text-[80px]">DESIGN</span>
+                        <i class="fa-solid fa-circle px-6 text-light-green"></i>
+                        <span class="text-[60px] lg:text-[80px]">PRINT</span>
+                        <i class="fa-solid fa-circle px-6 text-light-green"></i>
+                        <span class="text-[60px] lg:text-[80px]">SIGNAGE</span>
+                        <i class="fa-solid fa-circle px-6 text-light-green"></i>
+                        <span class="text-[60px] lg:text-[80px]"
+                            >VEHICLE BRANDING</span
+                        >
+                        <i class="fa-solid fa-circle px-6 text-light-green"></i>
+                        <span class="text-[60px] lg:text-[80px]"
+                            >WINDOW GRAPHICS</span
+                        >
+                        <i class="fa-solid fa-circle px-6 text-light-green"></i>
+                        <span class="ttext-[60px] lg:text-[80px]"
+                            >WALL MURALS</span
+                        >
+                        <i class="fa-solid fa-circle px-6 text-light-green"></i>
+                        <span class="ttext-[60px] lg:text-[80px]">DESIGN</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Autoplaying images slider -->
+        <section class="flex h-[260px] lg:h-[300px] overflow-hidden">
+            <div class="hidden lg:block w-1/3">
+                <div class="js-autoplaying-slider-1">
+                    <div class="image h-[300px] overflow-hidden">
+                        <img
+                            src="{{ theme.uri }}/assets/images/assets/images/slider/farmer-copleys.jpg"
+                            alt="Farmer copleys"
+                            class="object-cover object-center w-full h-full min-h-[300px]"
+                        />
+                    </div>
+                    <div class="image h-[300px] overflow-hidden">
+                        <img
+                            src="{{ theme.uri }}/assets/images/assets/images/slider/solarfast.jpg"
+                            alt="Showbar"
+                            class="object-cover object-center w-full h-full min-h-[300px]"
+                        />
+                    </div>
+                    <div class="image h-[300px] overflow-hidden">
+                        <img
+                            src="{{ theme.uri }}/assets/images/assets/images/slider/jd-gyms.jpg"
+                            alt="Showbar"
+                            class="object-cover object-center w-full h-full min-h-[300px]"
+                        />
+                    </div>
+                </div>
+            </div>
+            <div class="hidden lg:block w-1/3">
+                <div class="js-autoplaying-slider-2">
+                    <div class="image h-[300px] overflow-hidden">
+                        <img
+                            src="{{ theme.uri }}/assets/images/assets/images/slider/showbar.png"
+                            alt="Showbar"
+                            class="object-cover object-center w-full h-full min-h-[300px]"
+                        />
+                    </div>
+                    <div class="image h-[300px] overflow-hidden">
+                        <img
+                            src="{{ theme.uri }}/assets/images/assets/images/slider/honey.jpg"
+                            alt="Solarfast"
+                            class="object-cover object-center w-full h-full min-h-[300px]"
+                        />
+                    </div>
+                    <div class="image h-[300px] overflow-hidden">
+                        <img
+                            src="{{ theme.uri }}/assets/images/assets/images/slider/honey.jpg"
+                            alt="Solarfast"
+                            class="object-cover object-center w-full h-full min-h-[300px]"
+                        />
+                    </div>
+                    <div class="image h-[300px] overflow-hidden">
+                        <img
+                            src="{{ theme.uri }}/assets/images/assets/images/slider/Ocho_Hair.jpg"
+                            alt="Solarfast"
+                            class="object-cover object-center w-full h-full min-h-[300px]"
+                        />
+                    </div>
+                </div>
+            </div>
+            <div class="hidden lg:block w-1/3">
+                <div class="js-autoplaying-slider-3">
+                    <div class="image h-[300px] overflow-hidden">
+                        <img
+                            src="{{ theme.uri }}/assets/images/assets/images/slider/Van_Part-Wrap-3.jpg"
+                            alt="Solarfast"
+                            class="object-cover object-center w-full h-full min-h-[300px]"
+                        />
+                    </div>
+                    <div class="image h-[300px] overflow-hidden">
+                        <img
+                            src="{{ theme.uri }}/assets/images/assets/images/slider/Excel-Generators-3.jpg"
+                            class="object-cover object-center w-full h-full min-h-[300px]"
+                        />
+                    </div>
+                    <div class="image h-[300px] overflow-hidden">
+                        <img
+                            src="{{ theme.uri }}/assets/images/assets/images/slider/Wall_Wrap_Brand_Works-3.jpg"
+                            alt="Solarfast"
+                            class="object-cover object-center w-full h-full min-h-[300px]"
+                        />
+                    </div>
+                </div>
+            </div>
+            <div class="block lg:hidden w-full">
+                <div class="js-autoplaying-slider-mobile">
+                    <div class="image h-[260px] overflow-hidden">
+                        <img
+                            src="{{ theme.uri }}/assets/images/assets/images/slider/farmer-copleys.jpg"
+                            alt="Farmer copleys"
+                            class="object-cover object-center w-full h-full min-h-[260px]"
+                        />
+                    </div>
+                    <div class="image h-[260px] overflow-hidden">
+                        <img
+                            src="{{ theme.uri }}/assets/images/assets/images/slider/showbar.png"
+                            alt="Showbar"
+                            class="object-cover object-center w-full h-full min-h-[260px]"
+                        />
+                    </div>
+                    <div class="image h-[260px] overflow-hidden">
+                        <img
+                            src="{{ theme.uri }}/assets/images/assets/images/slider/solarfast.jpg"
+                            alt="Solarfast"
+                            class="object-cover object-center w-full h-full min-h-[260px]"
+                        />
+                    </div>
+                    <div class="image h-[260px] overflow-hidden">
+                        <img
+                            src="{{ theme.uri }}/assets/images/assets/images/slider/Wall_Wrap_Brand_Works-3.jpg"
+                            alt="Solarfast"
+                            class="object-cover object-center w-full h-full min-h-[260px]"
+                        />
+                    </div>
+                    <div class="image h-[260px] overflow-hidden">
+                        <img
+                            src="{{ theme.uri }}/assets/images/assets/images/slider/honey.jpg"
+                            alt="Solarfast"
+                            class="object-cover object-center w-full h-full min-h-[260px]"
+                        />
+                    </div>
+                </div>
+            </div>
+        </section>
+{% endblock %}

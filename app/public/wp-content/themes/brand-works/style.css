@@ -1181,6 +1181,15 @@ html {
   row-gap: 2rem;
 }
 
+.gap-x-9 {
+  -moz-column-gap: 2.25rem;
+       column-gap: 2.25rem;
+}
+
+.gap-y-6 {
+  row-gap: 1.5rem;
+}
+
 .space-y-2 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
@@ -1468,6 +1477,10 @@ html {
 
 .pt-9 {
   padding-top: 2.25rem;
+}
+
+.pt-7 {
+  padding-top: 1.75rem;
 }
 
 .text-center {
@@ -2143,6 +2156,14 @@ input[type='range']::-moz-range-track {
 
   .lg\:pt-\[70px\] {
     padding-top: 70px;
+  }
+
+  .lg\:pb-28 {
+    padding-bottom: 7rem;
+  }
+
+  .lg\:pt-11 {
+    padding-top: 2.75rem;
   }
 
   .lg\:text-\[44px\] {
