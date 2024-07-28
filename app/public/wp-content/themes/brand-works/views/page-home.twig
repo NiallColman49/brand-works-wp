@@ -817,13 +817,13 @@
             </div>
         </section>
 
-        <!-- Gravity form -->
-        <section class="bg-white py-10 lg:py-20">
+        <!-- Contact form -->
+        <section class="bg-white border-b border-dark-green relative overflow-x-hidden">
             <div class="container">
                 <div class="flex flex-wrap">
                     <div class="w-full lg:w-1/2">
                         <h2
-                                class="font-bold uppercase text-[32px] leading-[35px] lg:leading-[65px] lg:text-[70px] text-dark-green"
+                                class="font-bold uppercase text-[32px] leading-[35px] lg:leading-[65px] lg:text-[70px] text-dark-green pt-10"
                                 data-aos="fade-left"
                             >
                             READY TO MAKE YOUR BUSINESS <span class="text-light-green">STAND OUT</span> FROM THE CROWD?
@@ -832,10 +832,12 @@
                             <p class="text-dark-green font-medium text-[22px] leading-[30px] pt-10 lg:pr-10">We love discussing potential new ideas, get in touch with our friendly team today.</p>
                     </div>
 
-                    <div class="w-full lg:w-1/2">
+                    <div class="w-full lg:w-1/2 pt-10 lg:pt-0">
+                        {{ fn('do_shortcode', '[contact-form-7 id="7e9988f" title="Get In Touch"]') }}
+                        <div class="hidden lg:block bg-light-green absolute top-0 -right-40 w-[400px] h-full">dehfgrbi</div> 
                     </div>
                 </div> 
-            </div>   
+            </div>  
         </section>
     </section>
 {% endblock %}
