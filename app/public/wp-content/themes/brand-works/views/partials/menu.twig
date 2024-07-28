@@ -1,4 +1,4 @@
-{% if menu %}
+{# {% if menu %}
     <ul>
         {% for item in items %}
             <li class="{{ item.classes|join(' ') }}">
@@ -9,4 +9,403 @@
             </li>
         {% endfor %}
     </ul>
-{% endif %}
+{% endif %} #}
+
+<div class="z-50 shadow-lg shadow-[#000]/20 sticky top-0">
+    <!-- Top cta section - light green with socials and contact details -->
+    <section class="bg-light-green py-2">
+        <div class="container">
+            <div
+                class="flex flex-wrap items-center justify-between gap-4 lg:gap-0"
+            >
+                <div class="hidden lg:flex gap-4">
+                    <a
+                        href="https://www.facebook.com/districtsignco"
+                        target="_blank"
+                        class="flex items-center"
+                    >
+                        <i
+                            class="fa-brands fa-facebook text-dark-green text-lg"
+                        ></i>
+                    </a>
+
+                    <a
+                        href="https://www.instagram.com/brandworksuk/"
+                        target="_blank"
+                        class="flex items-center"
+                    >
+                        <i
+                            class="fa-brands fa-instagram text-dark-green text-xl"
+                        ></i>
+                    </a>
+
+                    <a
+                        href="https://uk.linkedin.com/company/brand.works"
+                        target="_blank"
+                        class="flex items-center"
+                    >
+                        <i
+                            class="fa-brands fa-linkedin text-dark-green text-xl"
+                        ></i>
+                    </a>
+                </div>
+
+                <div class="flex items-center gap-4">
+                    <a
+                        href="tel:0113 322 3531"
+                        target="_self"
+                        class="flex gap-2 items-center text-dark-green"
+                    >
+                        <i class="fa-solid fa-phone"></i>
+                        <span class="pt-1">0113 322 3531</span>
+                    </a>
+                    <a
+                        href="mailto:hello@brand-works.co.uk"
+                        target="_self"
+                        class="flex gap-2 items-center text-dark-green"
+                    >
+                        <i class="fa-solid fa-envelope"></i>
+                        <span class="pt-1"
+                            >hello@brand-works.co.uk</span
+                        >
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main navigation with page links and logo -->
+    <section class="bg-dark-green py-4 hidden lg:block">
+        <div class="container relative">
+            <div class="flex flex-wrap items-center lg:justify-between">
+                <a href="./" class="w-full lg:w-1/3">
+                    <img
+                        src="{{ theme.uri }}/assets/images/assets/logo/brand-works-logo.svg"
+                        alt="Brand Works Logo"
+                    />
+                </a>
+
+                <div
+                    class="w-full lg:w-1/2 flex gap-4 lg:gap-10 lg:justify-end"
+                >
+                    <a
+                        href="javascript:;"
+                        target="_self"
+                        class="text-white uppercase font-semibold js-services-toggle flex items-center gap-4"
+                    >
+                        Services
+                        <i
+                            class="fa-solid fa-chevron-down text-light-green -mt-1"
+                        ></i>
+                    </a>
+                    <a
+                        href="./our-work.html"
+                        target="_self"
+                        class="text-white uppercase font-semibold"
+                        >Our Work</a
+                    >
+
+                    <a
+                        href="./contact-us.html"
+                        target="_self"
+                        class="text-white uppercase font-semibold"
+                        >Contact</a
+                    >
+                </div>
+
+                <div class="w-full lg:w-1/6 flex lg:justify-end">
+                    <a
+                        href="./contact-us.html"
+                        target="_self"
+                        class="solid-button"
+                    >
+                        Get a quote
+                    </a>
+                </div>
+            </div>
+
+            <div
+                class="absolute top-[104px] left-0 w-full bg-white rounded-b-lg js-mega-menu hidden px-16 py-10"
+            >
+                <div class="grid grid-cols-6 gap-4">
+                    <div class="col-span-1 flex flex-col space-y-2">
+                        <a
+                            href="./vehicle-branding.html"
+                            class="underline font-semibold"
+                            data-mh="title"
+                        >
+                            VEHICLE BRANDING
+                        </a>
+
+                        <img
+                            src="{{ theme.uri }}/assets/images/assets/images/our-work/Solar_Fast_Luton.jpeg"
+                            alt="SL"
+                            class="rounded-md h-[132px]"
+                        />
+
+                        <div class="flex flex-col gap-y-1 pt-1">
+                            <a
+                                href="./vehicle-branding.html#fleet-branding"
+                                >Fleet branding</a
+                            >
+
+                            <a href="./vehicle-branding.html#full-wraps"
+                                >Full wraps</a
+                            >
+
+                            <a href="./vehicle-branding.html#part-wraps"
+                                >Part wraps</a
+                            >
+
+                            <a
+                                href="./vehicle-branding.html#signwriting"
+                                >Signwriting</a
+                            >
+
+                            <a href="./vehicle-branding.html#chapter-8"
+                                >Chapter 8</a
+                            >
+                        </div>
+                    </div>
+
+                    <div class="col-span-1 flex flex-col space-y-2">
+                        <a
+                            href="./print-and-display.html"
+                            class="underline font-semibold"
+                            data-mh="title"
+                        >
+                            PRINT & DISPLAY
+                        </a>
+
+                        <img
+                            src="{{ theme.uri }}/assets/images/assets/images/print-and-display/Farmer_Copleys_5.jpg"
+                            alt="SL"
+                            class="rounded-md h-[132px]"
+                        />
+
+                        <div class="flex flex-col gap-y-1 pt-1">
+                            <a
+                                href="./print-and-display.html#wall-graphics"
+                                >Wall graphics</a
+                            >
+
+                            <a
+                                href="./print-and-display.html#window-graphics"
+                                >Window graphics</a
+                            >
+
+                            <a
+                                href="./print-and-display.html#floor-graphics"
+                                >Floor graphics</a
+                            >
+
+                            <a href="./print-and-display.html#hoardings"
+                                >Hoardings</a
+                            >
+
+                            <a href="./print-and-display.html#display"
+                                >Display</a
+                            >
+                        </div>
+                    </div>
+
+                    <div class="col-span-1 flex flex-col space-y-2">
+                        <a
+                            href="./signage-and-branding.html"
+                            class="underline font-semibold"
+                            data-mh="title"
+                        >
+                            SIGNAGE & BRANDING
+                        </a>
+
+                        <img
+                            src="{{ theme.uri }}/assets/images/assets/images/print-and-display/Farmer_Copleys_10.jpg"
+                            alt="SL"
+                            class="rounded-md h-[132px]"
+                        />
+
+                        <div class="flex flex-col gap-y-1 pt-1">
+                            <a
+                                href="./signage-and-branding.html#flat-panel-signs"
+                                >Flat panel signs</a
+                            >
+
+                            <a
+                                href="./signage-and-branding.html#tray-signs"
+                                >Traysigns</a
+                            >
+
+                            <a
+                                href="./signage-and-branding.html#cut-letters"
+                                >Cut letters</a
+                            >
+
+                            <a
+                                href="./signage-and-branding.html#built-up-letters"
+                                >Built up letters</a
+                            >
+
+                            <a
+                                href="./signage-and-branding.html#wayfinding"
+                                >Wayfinding</a
+                            >
+
+                            <a
+                                href="./signage-and-branding.html#pavement-signs"
+                                >Pavement signs</a
+                            >
+                        </div>
+                    </div>
+
+                    <div class="col-span-1 flex flex-col space-y-2">
+                        <a
+                            href="./architectural-wrap.html"
+                            class="underline font-semibold"
+                            data-mh="title"
+                        >
+                            ARCHITECTURAL WRAP
+                        </a>
+
+                        <img
+                            src="{{ theme.uri }}/assets/images/assets/images/architectural-wrap/Coverstyl 1.jpg"
+                            alt="SL"
+                            class="rounded-md h-[132px]"
+                        />
+
+                        <div class="flex flex-col gap-y-1 pt-1">
+                            <a href="./architectural-wrap.html"
+                                >Walls</a
+                            >
+
+                            <a href="./architectural-wrap.html"
+                                >Doors</a
+                            >
+
+                            <a href="./architectural-wrap.html"
+                                >Lobbies & lifts</a
+                            >
+
+                            <a href="./architectural-wrap.html"
+                                >Ceilings</a
+                            >
+
+                            <a href="./architectural-wrap.html"
+                                >Furniture</a
+                            >
+                        </div>
+                    </div>
+
+                    <div class="col-span-1 flex flex-col space-y-2">
+                        <a
+                            href="./events-and-exhibitions.html"
+                            class="underline font-semibold"
+                            data-mh="title"
+                        >
+                            EVENTS & EXHIBITIONS
+                        </a>
+
+                        <img
+                            src="{{ theme.uri }}/assets/images/assets/images/events-and-exhibitions/Ikea flags (2).jpg"
+                            alt="SL"
+                            class="rounded-md h-[132px]"
+                        />
+
+                        <div class="flex flex-col gap-y-1 pt-1">
+                            <a
+                                href="./events-and-exhibitions.html#fabric-displays"
+                                >Fabric displays</a
+                            >
+
+                            <a
+                                href="./events-and-exhibitions.html#roller-banners"
+                                >Roller banners</a
+                            >
+
+                            <a
+                                href="./events-and-exhibitions.html#flags"
+                                >Flags</a
+                            >
+
+                            <a
+                                href="./events-and-exhibitions.html#exibition-pop-ups"
+                                >Exhibition pop ups</a
+                            >
+
+                            <a
+                                href="./events-and-exhibitions.html#bollard-covers"
+                                >Bollard covers</a
+                            >
+                        </div>
+                    </div>
+
+                    <div class="col-span-1 flex flex-col space-y-2">
+                        <a
+                            href="./sectors.html"
+                            class="underline font-semibold"
+                            data-mh="title"
+                        >
+                            SECTORS WE SERVE
+                        </a>
+
+                        <img
+                            src="{{ theme.uri }}/assets/images/assets/images/sectors-education.jpg"
+                            alt="SL"
+                            class="rounded-md h-[132px]"
+                        />
+
+                        <div class="flex flex-col gap-y-1 pt-1">
+                            <a href="./sectors.html#commercial"
+                                >Commercial</a
+                            >
+
+                            <a href="./sectors.html#retail">Retail</a>
+
+                            <a href="./sectors.html#sport">Sport</a>
+
+                            <a href="./sectors.html#exhibitions"
+                                >Exhibitions</a
+                            >
+
+                            <a href="./sectors.html#healthcare"
+                                >Healthcare</a
+                            >
+
+                            <a href="./sectors.html#education"
+                                >Education</a
+                            >
+
+                            <a href="./sectors.html#hospitality"
+                                >Hospitality</a
+                            >
+
+                            <a href="./sectors.html#construction"
+                                >Construction</a
+                            >
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<div class="fixed right-0 top-1/2 -translate-y-1/2 z-50">
+    <!-- get a quote widget -->
+    <div
+        class="w-11 rounded-l-md bg-light-green py-6 px-2 flex items-center justify-center z-50"
+    >
+        <a
+            href="./contact-us.html"
+            class="uppercase [writing-mode:vertical-rl] transform rotate-180 font-semibold"
+        >
+            Get a quote
+        </a>
+    </div>
+
+    <!-- scroll up widget -->
+    <div
+        class="js-scroll-up w-11 rounded-l-md bg-light-green p-2 flex items-center justify-center z-50 mt-14 cursor-pointer"
+    >
+        <img src="{{ theme.uri }}/assets/images/assets/images/cheveron-up.svg" alt="Chevron" />
+    </div>
+</div>
