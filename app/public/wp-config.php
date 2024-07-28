@@ -73,6 +73,8 @@ $table_prefix = 'wp_';
 
 /* Add any custom values between this line and the "stop editing" line. */
 
+// Disable all core updates
+define( 'WP_AUTO_UPDATE_CORE', false );
 
 
 /**
