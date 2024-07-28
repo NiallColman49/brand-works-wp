@@ -1,0 +1,1138 @@
+{% extends 'layouts/base.twig' %}
+
+{% block content %}
+    <!-- Hero section -->
+    <section
+        class="relative"
+        style="
+            background-image: url('{{ theme.uri }}/assets/images/assets/images/architectural-wrap/architectural-wrap-hero.png');
+            object-fit: cover;
+            object-position: center;
+            width: 100%;
+            height: 100%;
+        "
+    >
+        <div
+            class="absolute top-0 left-0 w-full h-full bg-dark-green/90 z-[1] mix-blend-multiply"
+        ></div>
+
+        <div
+            class="absolute bottom-0 left-0 w-full h-20 bg-gradient-to-t from-dark-green z-[2]"
+        ></div>
+
+        <div class="container">
+            <div
+                class="pt-10 lg:pt-[100px] pb-10 lg:pb-[84px] relative z-10"
+            >
+                <div class="w-full flex flex-col items-center relative">
+                    <h2
+                        class="text-light-green uppercase text-sm text-center tracking-[0.3em]"
+                    >
+                        DURABLE FINISHES - HUGE DESIGN POTENTIAL - MINIMAL
+                        DISTRUPTION
+                    </h2>
+
+                    <h1
+                        class="font-bold uppercase text-[32px] leading-[35px] lg:leading-[65px] lg:text-[70px] text-center pt-10 lg:pt-14 lg:w-4/5 mx-auto"
+                    >
+                        <span class="text-white"
+                            >RENEWING YOUR SPACE WITH </span
+                        ><span class="text-light-green">
+                            ARCHITECTURAL WRAPPING</span
+                        >
+                    </h1>
+
+                    <p
+                        class="text-white font-medium text-[22px] leading-[30px] text-center pt-10 lg:pt-[60px] lg:w-[57%] lg:px-10"
+                    >
+                        Wrap (almost) anything, save big on everything!
+                        Breathe new life into your space with affordable
+                        architectural wraps for furniture, doors, walls, and
+                        even elevators.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Before/after slider -->
+    <section class="bg-dark-green pb-2 lg:pb-10">
+        <div class="container relative overflow-hidden max-h-[400px]">
+            <div id="comparison">
+                <figure>
+                    <div id="handle"></div>
+                    <div id="divisor"></div>
+                </figure>
+                <input
+                    type="range"
+                    min="0"
+                    max="100"
+                    value="50"
+                    id="slider"
+                    oninput="moveDivisor()"
+                />
+            </div>
+        </div>
+    </section>
+
+    <!-- Return on investment section -->
+    <section class="py-10 lg:py-20 bg-dark-green">
+        <div class="container">
+            <h2
+                class="w-full font-bold uppercase text-[32px] leading-[35px] lg:text-[45px] lg:leading-[48px] text-center pb-10 lg:pb-20"
+            >
+                <span class="text-light-green"
+                    >SAVING YOU TIME, MONEY AND DOWNTIME <br
+                /></span>
+                <span class="text-white">WITH ARCHITECTURAL WRAP</span>
+            </h2>
+
+            <div
+                class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4"
+            >
+                <div
+                    class="col-span-1 border border-white rounded-[20px] flex flex-col items-center text-white p-6 lg:p-10"
+                >
+                    <img
+                        src="{{ theme.uri }}/assets/images/assets/images/investment-icons/pound-up.svg"
+                        alt="Pound increase"
+                        data-mh="icon"
+                    />
+
+                    <h3
+                        data-mh="title"
+                        class="font-bold text-lg text-light-green leading-[26px] text-center pt-8"
+                    >
+                        COST EFFECTIVE
+                    </h3>
+
+                    <p
+                        data-mh="content"
+                        class="text-white text-center pt-6"
+                    >
+                        Architectural wrap film is significantly cheaper
+                        than replacing entire surfaces like doors,
+                        countertops, or furniture. You can achieve a
+                        high-end look for a fraction of the price.
+                    </p>
+                </div>
+
+                <div
+                    class="col-span-1 border border-white rounded-[20px] flex flex-col items-center text-white p-6 lg:p-10"
+                >
+                    <img
+                        src="{{ theme.uri }}/assets/images/assets/images/investment-icons/person.svg"
+                        alt="Person"
+                        data-mh="icon"
+                    />
+
+                    <h3
+                        data-mh="title"
+                        class="font-bold text-lg text-light-green leading-[26px] text-center pt-8"
+                    >
+                        QUICK AND EASY UPDATE
+                    </h3>
+
+                    <p
+                        class="text-white text-center pt-6"
+                        data-mh="content"
+                    >
+                        Applying film is a faster process than demolition
+                        and installation. This minimizes disruption and
+                        allows you to enjoy your refreshed space sooner.
+                    </p>
+                </div>
+
+                <div
+                    class="col-span-1 border border-white rounded-[20px] flex flex-col items-center text-white p-6 lg:p-10"
+                >
+                    <img
+                        src="{{ theme.uri }}/assets/images/assets/images/investment-icons/piggy-bank.svg"
+                        alt="Piggy bank"
+                        data-mh="icon"
+                    />
+
+                    <h3
+                        data-mh="title"
+                        class="font-bold text-lg text-light-green leading-[26px] text-center pt-8"
+                    >
+                        VERSATILE WITH 1600+ FINISHES
+                    </h3>
+
+                    <p
+                        data-mh="content"
+                        class="text-white text-center pt-6"
+                    >
+                        With a wide range of finishes available,
+                        architectural wraps can transform the look of your
+                        space. You can go for classic wood grains, sleek
+                        marble finishes, or even bold, colorful options.
+                    </p>
+                </div>
+
+                <div
+                    class="col-span-1 border border-white rounded-[20px] flex flex-col items-center text-white p-6 lg:p-10"
+                >
+                    <img
+                        src="{{ theme.uri }}/assets/images/assets/images/investment-icons/merit.svg"
+                        alt="Merit"
+                        data-mh="icon"
+                    />
+
+                    <h3
+                        data-mh="title"
+                        class="font-bold text-lg text-light-green leading-[26px] text-center pt-8"
+                    >
+                        SUSTAINABLE SOLUTION
+                    </h3>
+
+                    <p
+                        data-mh="content"
+                        class="text-white text-center pt-6"
+                    >
+                        Wraps extend the lifespan of existing surfaces,
+                        reducing waste that would end up in landfills during
+                        a traditional renovation.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Two column image and text - image right -->
+    <section
+        class="bg-gradient-to-b from-dark-green from-0 via-dark-green via-70% to-white to-100% pt-10 pb-10 lg:pb-20"
+    >
+        <div class="container">
+            <div
+                class="flex flex-wrap lg:flex-nowrap gap-10 lg:gap-[60px] items-center"
+            >
+                <div class="w-full lg:w-1/2">
+                    <h2
+                        class="font-bold uppercase text-[32px] leading-[35px] lg:leading-[65px] lg:text-[70px] text-white"
+                    >
+                        LIMITLESS ARRAYS OF
+                        <span class="text-light-green"
+                            >COLOURS AND TEXTURES.</span
+                        >
+                    </h2>
+
+                    <p class="text-white pt-10">
+                        Imagine your walls coming alive, transformed from
+                        blank canvases into captivating experiences that
+                        resonate with your brand and enthrall your visitors.
+                        At Brand Works, we don't just create wall graphics
+                        and murals - we craft powerful storytelling tools
+                        that elevate your brand identity and spark
+                        engagement within your space.
+                    </p>
+
+                    <div class="hidden lg:block pt-10">
+                        <a
+                            href="./contact-us.html"
+                            target="_self"
+                            class="solid-button-tall max-w-max"
+                        >
+                            START YOUR PROJECT
+                        </a>
+                    </div>
+                </div>
+
+                <div
+                    class="w-full lg:w-1/2 lg:min-h-[632px] rounded-[20px] overflow-hidden"
+                >
+                    <img
+                        src="{{ theme.uri }}/assets/images/assets/images/architectural-wrap/aRCHITECTURAL.jpeg"
+                        alt="Flying tiger"
+                        class="object-cover object-center w-full h-full lg:min-h-[632px]"
+                    />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Finishes section -->
+    <section class="py-10 lg:py-20">
+        <div class="container">
+            <h2
+                class="w-full font-bold uppercase text-[45px] leading-[48px] text-center pb-10 lg:pb-20"
+            >
+                <span class="text-dark-green"
+                    >OVER 1600+ FINISHES<br
+                /></span>
+                <span class="text-light-green"> TO CHOOSE FROM</span>
+            </h2>
+
+            <div
+                class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4"
+            >
+                <div class="col-span-1 rounded-[20px] overflow-hidden">
+                    <img
+                        src="{{ theme.uri }}/assets/images/assets/images/architectural-wrap/img143.jpg"
+                        alt="Pound increase"
+                        class="w-full h-full object-cover object-center"
+                    />
+                </div>
+
+                <div class="col-span-1 rounded-[20px] overflow-hidden">
+                    <img
+                        src="{{ theme.uri }}/assets/images/assets/images/architectural-wrap/IMG_9575_MARRIOT RENAISSANCE AF08.jpg"
+                        alt="Pound increase"
+                        class="w-full h-full object-cover object-center"
+                    />
+                </div>
+
+                <div class="col-span-1 rounded-[20px] overflow-hidden">
+                    <img
+                        src="{{ theme.uri }}/assets/images/assets/images/architectural-wrap/Coverstyl 1.jpg"
+                        alt="Pound increase"
+                        class="w-full h-full object-cover object-center"
+                    />
+                </div>
+
+                <div class="col-span-1 rounded-[20px] overflow-hidden">
+                    <img
+                        src="{{ theme.uri }}/assets/images/assets/images/architectural-wrap/IMG_1564.jpg"
+                        alt="Pound increase"
+                        class="w-full h-full object-cover object-center"
+                    />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- View our finishes section -->
+    <section class="py-10 lg:py-20 bg-[#105255]">
+        <div class="container">
+            <h2
+                class="w-full font-bold uppercase text-[45px] leading-[48px] text-center text-white"
+            >
+                View our finishes
+            </h2>
+
+            <p class="text-center text-white pt-6 lg:px-20">
+                Transform your space with endless design possibilities. We
+                can match virtually any surface pattern, from rich
+                woodgrains and luxurious marbles to sleek leather, natural
+                stone, and beyond. Discover why leading brands worldwide are
+                embracing architectural film. It's a cost-effective and
+                sustainable solution to elevate your design.
+            </p>
+
+            <div
+                class="flex flex-wrap lg:flex-nowrap lg:justify-between w-full gap-10 justify-center lg:gap-20 xl:gap-40 pt-10 lg:pt-16"
+            >
+                <div class="flex flex-col items-center w-full md:w-1/3">
+                    <div
+                        class="w-full h-auto md:h-[330px] lg:h-[390px] xl:h-[411px] 2xl:h-[550px] flex justify-center"
+                    >
+                        <img
+                            src="{{ theme.uri }}/assets/images/assets/images/architectural-wrap/3m-brochure.png"
+                            alt="3m brochure"
+                            class="object-cover object-center md:w-full md:h-full max-h-[330px] md:max-h-full"
+                        />
+                    </div>
+                    <a
+                        href="{{ theme.uri }}/assets/images/assets/images/architectural-wrap/3m-brochure.pdf"
+                        target="_self"
+                        download
+                        class="outline-button mt-10"
+                    >
+                        Download
+                    </a>
+                </div>
+
+                <div class="flex flex-col items-center w-full md:w-1/3">
+                    <div
+                        class="w-full h-[330px] lg:h-[390px] xl:h-[411px] 2xl:h-[550px] flex justify-center"
+                    >
+                        <img
+                            src="{{ theme.uri }}/assets/images/assets/images/architectural-wrap/Coverstyl_Brochure.png"
+                            alt="Coverstyl brochure"
+                            class="object-cover object-center md:w-full md:h-full max-h-[330px] md:max-h-full"
+                        />
+                    </div>
+                    <a
+                        href="{{ theme.uri }}/assets/images/assets/images/architectural-wrap/coverstyl-brochure.pdf"
+                        target="_self"
+                        download
+                        class="outline-button mt-10"
+                    >
+                        Download
+                    </a>
+                </div>
+
+                <div class="flex flex-col items-center w-full md:w-1/3">
+                    <div
+                        class="w-full h-[330px] lg:h-[390px] xl:h-[411px] 2xl:h-[550px] flex justify-center"
+                    >
+                        <img
+                            src="{{ theme.uri }}/assets/images/assets/images/architectural-wrap/LX_Brochure.png"
+                            alt="Coverstyl brochure"
+                            class="object-cover object-center md:w-full md:h-full max-h-[330px] md:max-h-full"
+                        />
+                    </div>
+                    <a
+                        href="{{ theme.uri }}/assets/images/assets/images/architectural-wrap/lx-hausys-benif-interior-film-sample-book-2023-2024_unlocked.pdf"
+                        target="_self"
+                        download
+                        class="outline-button mt-10"
+                    >
+                        Download
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Free swatch sample pack -->
+    <section class="py-10 lg:py-20 bg-dark-green">
+        <div class="container">
+            <div class="flex flex-wrap">
+                <div class="w-full lg:w-1/2">
+                    <h2
+                        class="font-bold text-[32px] leading-[35px] lg:text-[65px] lg:leading-[57px]"
+                    >
+                        <span class="text-white">FREE SAMPLE <br /></span
+                        ><span class="text-light-green">SWATCH PACK</span>
+                    </h2>
+
+                    <div class="text-white pt-10 lg:pt-12">
+                        <p>
+                            We know seeing is believing, that's why we offer
+                            our customers to experience the transformative
+                            power of architectural wrap film with a free
+                            sample pack.
+                        </p>
+
+                        <ul class="list-disc list-inside pt-2">
+                            <li>Click the button below!</li>
+                            <li>
+                                Customize your pack:<br />
+                                <span
+                                    >Choose the woodgrains, marbles,
+                                    leathers, or colors you're interested
+                                    in.</span
+                                >
+                            </li>
+                            <li>
+                                We'll send them in the post:<br />
+                                Explore the textures, finishes, and quality
+                                of our films firsthand.
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="pt-10 lg:pt-20">
+                        <a
+                            href="./contact-us.html"
+                            target="_self"
+                            class="solid-button-tall max-w-max"
+                        >
+                            ORDER A FREE SAMPLE PACK
+                        </a>
+                    </div>
+                </div>
+
+                <div class="w-full lg:w-1/2 pt-10 lg:pt-0">
+                    <img
+                        src="{{ theme.uri }}/assets/images/assets/images/architectural-wrap/Swatch_Sample.png"
+                        alt="Download brochures"
+                    />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fire tested section -->
+    <section class="py-10 lg:py-20 bg-light-green">
+        <div class="container">
+            <h2
+                class="font-bold text-[32px] leading-[35px] lg:text-[45px] lg:leading-[48px] text-center"
+            >
+                <span class="text-dark-green"
+                    >FIRE TESTED, MOISTURE AND HEAT RESISTANT <br /></span
+                ><span class="text-white">WITH 5 YEAR WARRANTY </span>
+            </h2>
+
+            <p class="text-center pt-10 w-full lg:w-2/3 mx-auto">
+                Our architectural films are fire-rated (EN13501-1, B-S1, D0)
+                and suitable for demanding environments like marine
+                applications. They won't emit smoke or harmful toxins in a
+                fire, giving you peace of mind. Plus, for added confidence,
+                we offer a 5-year warranty on all non-damage-related
+                installations, depending on the vinyl chosen.
+            </p>
+        </div>
+    </section>
+
+    <div class="hidden -right-3 sm:-right-4 -left-3 sm:-left-4"></div>
+
+    <!-- Brands using section -->
+    <section class="pt-10 lg:pt-20 pb-10 bg-dark-green">
+        <div class="container">
+            <h2
+                class="text-light-green font-bold text-[32px] leading-[35px] lg:text-[45px] lg:leading-[48px] text-center"
+            >
+                BRANDS USING ARCHITECTURAL WRAP
+            </h2>
+
+            <div
+                class="border border-light-green rounded-[50px] flex flex-wrap gap-10 justify-center lg:justify-between py-10 px-4 sm:px-10 lg:px-20 mt-10"
+            >
+                <div class="w-[130px] flex justify-center items-center">
+                    <img
+                        src="{{ theme.uri }}/assets/images/assets/images/architectural-wrap/brands/holiday-inn.png"
+                        alt="Holiday Inn"
+                        class="object-contain object-center"
+                    />
+                </div>
+
+                <div class="w-[130px] flex justify-center items-center">
+                    <img
+                        src="{{ theme.uri }}/assets/images/assets/images/architectural-wrap/brands/hsbc.png"
+                        alt="HSBC"
+                        class="object-contain object-center"
+                    />
+                </div>
+
+                <div class="w-[130px] flex justify-center items-center">
+                    <img
+                        src="{{ theme.uri }}/assets/images/assets/images/architectural-wrap/brands/hilton.png"
+                        alt="Hilton"
+                        class="object-contain object-center"
+                    />
+                </div>
+
+                <div class="w-[130px] flex justify-center items-center">
+                    <img
+                        src="{{ theme.uri }}/assets/images/assets/images/architectural-wrap/brands/renault.png"
+                        alt="Renault"
+                        class="object-contain object-center max-h-[108px]"
+                    />
+                </div>
+
+                <div class="w-[130px] flex justify-center items-center">
+                    <img
+                        src="{{ theme.uri }}/assets/images/assets/images/architectural-wrap/brands/hard-rock.png"
+                        alt="Hard Rock"
+                        class="object-contain object-center"
+                    />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ's -->
+    <section class="bg-dark-green pt-10 pb-10 lg:pb-20">
+        <div class="container">
+            <h2
+                class="uppercase text-[32px] leading-[35px] lg:text-[45px] lg:leading-[46px] font-bold text-white text-center"
+            >
+                FREQUENTLY ASKED QUESTIONS
+            </h2>
+
+            <p class="text-white text-center w-full lg:w-1/2 mx-auto pt-8">
+                Explore our comprehensive FAQ to find answers to all your
+                questions about working with architectural films and Brand
+                Works.
+            </p>
+
+            <div class="flex flex-wrap gap-7 lg:flex-nowrap pt-10">
+                <div class="col-one-container w-full lg:w-1/2">
+                    <div
+                        class="accordion js-accordion cursor-pointer flex flex-col gap-y-7"
+                    >
+                        <div class="accordion__item js-accordion-item">
+                            <div
+                                class="accordion-header js-accordion-header flex justify-between items-center bg-white rounded-2xl p-10 lg:h-[146px]"
+                            >
+                                <h3 class="font-semibold text-[22px] pr-4">
+                                    How long does architectural wrap last?
+                                </h3>
+                                <div
+                                    class="flex justify-center items-center p-2 bg-[#F4F4F4] rounded-md"
+                                >
+                                    <i
+                                        class="fa-regular fa-plus text-[#BFBFBF] text-2xl"
+                                    ></i>
+                                </div>
+                            </div>
+                            <div
+                                class="accordion-body js-accordion-body hidden bg-white rounded-2xl -mt-6"
+                            >
+                                <div class="accordion-body__contents p-10">
+                                    <p class="lg:pr-10">
+                                        Not all vinyl is created equal.
+                                        Architectural film boasts superior
+                                        quality and durability, lasting 7 -
+                                        10 years (often longer) with proper
+                                        care. It even features a scratch -
+                                        resistant layer to handle everyday
+                                        wear and tear. High - traffic areas
+                                        may experience more wear, so keep
+                                        that in mind when choosing a
+                                        surface.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion__item js-accordion-item">
+                            <div
+                                class="accordion-header js-accordion-header flex justify-between items-center bg-white rounded-2xl p-10 lg:h-[146px]"
+                            >
+                                <h3 class="font-semibold text-[22px] pr-4">
+                                    Are the films you use fire rated?
+                                </h3>
+                                <div
+                                    class="flex justify-center items-center p-2 bg-[#F4F4F4] rounded-md"
+                                >
+                                    <i
+                                        class="fa-regular fa-plus text-[#BFBFBF] text-2xl"
+                                    ></i>
+                                </div>
+                            </div>
+                            <div
+                                class="accordion-body js-accordion-body hidden bg-white rounded-2xl -mt-6"
+                            >
+                                <div class="accordion-body__contents p-10">
+                                    <p class="lg:pr-10">
+                                        Absolutely, all our architectural
+                                        vinyl meets fire safety standards.
+                                        We use three trusted brands: 3M,
+                                        Cove rstyl, and LX.
+
+                                        <span class="block"
+                                            >&#x2022; 3M DI - NOC films are
+                                            specifically certified to meet
+                                            CE and EN 13501 fire safety
+                                            standards.</span
+                                        >
+                                        <span class="block"
+                                            >&#x2022; Coverstyl films have
+                                            also undergone rigorous fire
+                                            resistance testing and meet
+                                            European fire rating standards.
+                                        </span>
+                                        <span class="block"
+                                            >&#x2022; LX films are
+                                            recognized for their safety,
+                                            passing both domestic and global
+                                            fire safety certifications.
+                                        </span>
+
+                                        Need a specific fire certification
+                                        for your project? No problem! We'll
+                                        be happy to provide the relevant
+                                        documentation based on the film you
+                                        choose. Just get in touch with our
+                                        team and we'll ensu re you have the
+                                        information you need.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion__item js-accordion-item">
+                            <div
+                                class="accordion-header js-accordion-header flex justify-between items-center bg-white rounded-2xl p-10 lg:h-[146px]"
+                            >
+                                <h3 class="font-semibold text-[22px] pr-4">
+                                    How long does vinyl wrapping take?
+                                </h3>
+                                <div
+                                    class="flex justify-center items-center p-2 bg-[#F4F4F4] rounded-md"
+                                >
+                                    <i
+                                        class="fa-regular fa-plus text-[#BFBFBF] text-2xl"
+                                    ></i>
+                                </div>
+                            </div>
+                            <div
+                                class="accordion-body js-accordion-body hidden bg-white rounded-2xl -mt-6"
+                            >
+                                <div class="accordion-body__contents p-10">
+                                    <p class="lg:pr-10">
+                                        We understand minimizing downtime is
+                                        crucial for your business.
+                                        Architectural vinyl wraps offer a
+                                        significant advantage in turnaround
+                                        time compared to traditional
+                                        renovations. The sp eed depends on
+                                        the project's size and complexity,
+                                        but for smaller jobs, we can often
+                                        complete them within a single
+                                        day.<br /><br />
+                                        For example, our team has
+                                        successfully wrapped 24 entire hotel
+                                        rooms in a day, including desks,
+                                        headboards, cabinets, and doors!
+                                        This de monstrates our expertise and
+                                        ability to handle projects
+                                        efficiently.<br /><br />
+                                        In most cases, we can be in and out
+                                        of your business within a day,
+                                        minimizing disruption and getting
+                                        you back to normal operations
+                                        quickly. For a more accurate
+                                        estimate on your specific p roject,
+                                        feel free to contact us with details
+                                        about the scope of work.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-two-container w-full lg:w-1/2">
+                    <div
+                        class="accordion js-accordion cursor-pointer flex flex-col gap-y-7"
+                    >
+                        <div class="accordion__item js-accordion-item">
+                            <div
+                                class="accordion-header js-accordion-header flex justify-between items-center bg-white rounded-2xl p-10 lg:h-[146px]"
+                            >
+                                <h3 class="font-semibold text-[22px] pr-4">
+                                    What if my surface has existing damage?
+                                    Can it still be wrapped?
+                                </h3>
+                                <div
+                                    class="flex justify-center items-center p-2 bg-[#F4F4F4] rounded-md"
+                                >
+                                    <i
+                                        class="fa-regular fa-plus text-[#BFBFBF] text-2xl"
+                                    ></i>
+                                </div>
+                            </div>
+                            <div
+                                class="accordion-body js-accordion-body hidden bg-white rounded-2xl -mt-6"
+                            >
+                                <div class="accordion-body__contents p-10">
+                                    <p class="lg:pr-10">
+                                        We can often address minor surface
+                                        imperfections like scratches, dents,
+                                        and small holes as part of our vinyl
+                                        wrap prepara tion process. Our
+                                        skilled technicians can fill and
+                                        repair these areas, ensuring a
+                                        flawless finish once the wrap is
+                                        applied. In most cases, you'd never
+                                        know there was any damage
+                                        beforehand! <br /><br />However,
+                                        it's important to be realistic about
+                                        the extent of damage. If the surface
+                                        is severely compromised, like being
+                                        completely broken in half, wrapping
+                                        might not be the most suitable
+                                        solution. In those cases, replacing
+                                        the surface entirely might be the
+                                        best course of action.
+                                        <br /><br /><span
+                                            class="font-semibold"
+                                            >The best way to determine if
+                                            wrapping is rig ht for your
+                                            project is to schedule a
+                                            consultation.</span
+                                        >
+                                        Our team can assess the specific
+                                        damage and advise you on the most
+                                        effective and long - lasting
+                                        solution.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion__item js-accordion-item">
+                            <div
+                                class="accordion-header js-accordion-header flex justify-between items-center bg-white rounded-2xl p-10 lg:h-[146px]"
+                            >
+                                <h3 class="font-semibold text-[22px] pr-4">
+                                    Will the vinyl peel, fade or lift after
+                                    a few years?
+                                </h3>
+                                <div
+                                    class="flex justify-center items-center p-2 bg-[#F4F4F4] rounded-md"
+                                >
+                                    <i
+                                        class="fa-regular fa-plus text-[#BFBFBF] text-2xl"
+                                    ></i>
+                                </div>
+                            </div>
+                            <div
+                                class="accordion-body js-accordion-body hidden bg-white rounded-2xl -mt-6"
+                            >
+                                <div class="accordion-body__contents p-10">
+                                    <p class="lg:pr-10">
+                                        Architectural vinyl is renowned for
+                                        its exceptional durability. When
+                                        properly installed, you can expect
+                                        minimal risk of peeling or fading
+                                        over time. To ensure a flawless
+                                        finish, our team takes extra
+                                        precautions. We'll prime any areas
+                                        where even the slightest peeling
+                                        might occur, giving you compl ete
+                                        peace of mind about the longevity of
+                                        your wrap.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion__item js-accordion-item">
+                            <div
+                                class="accordion-header js-accordion-header flex justify-between items-center bg-white rounded-2xl p-10 lg:h-[146px]"
+                            >
+                                <h3 class="font-semibold text-[22px] pr-4">
+                                    Can I install the vinyl myself?
+                                </h3>
+                                <div
+                                    class="flex justify-center items-center p-2 bg-[#F4F4F4] rounded-md"
+                                >
+                                    <i
+                                        class="fa-regular fa-plus text-[#BFBFBF] text-2xl"
+                                    ></i>
+                                </div>
+                            </div>
+                            <div
+                                class="accordion-body js-accordion-body hidden bg-white rounded-2xl -mt-6"
+                            >
+                                <div class="accordion-body__contents p-10">
+                                    <p class="lg:pr-10">
+                                        While architectural vinyl offers a
+                                        fantastic aesthetic upgrade,
+                                        professional installation is highly
+                                        recommended to achieve the best
+                                        possible results. These films
+                                        require s pecialized techniques and
+                                        experience to ensure a flawless,
+                                        long - lasting finish.<br /><br />
+                                        Here's why opting for professional
+                                        installation is a wise choice:
+                                        <br /><br />
+                                        <span class="block"
+                                            >&#x2022;
+                                            <span class="font-semibold"
+                                                >Expert Application:</span
+                                            >
+                                            Our skilled installers have the
+                                            experience and knowledge to
+                                            handle even the most intricate
+                                            surfaces, guaranteeing a smooth,
+                                            bubble - free application.</span
+                                        >
+                                        <span class="block"
+                                            >&#x2022;
+                                            <span class="font-semibold"
+                                                >Seamless Finish:</span
+                                            >
+                                            Professionals know how to
+                                            properly prepare surfaces and
+                                            use the right tools to achieve a
+                                            flawless, high - quality
+                                            look.</span
+                                        >
+                                        <span class="block"
+                                            >&#x2022;
+                                            <span class="font-semibold"
+                                                >Peace of Mind: </span
+                                            >By letting our experts handle
+                                            the installation, you can be
+                                            confident that your vinyl wrap
+                                            will look its best and last for
+                                            years to come.</span
+                                        >
+                                        <br />
+                                        Of course, the final decision is
+                                        yours. If you're an experienced
+                                        installer comfortable working with
+                                        specialized vinyl, you can certainly
+                                        tackle the project yourself.
+                                        However, for most customers,
+                                        professional installation offers
+                                        significant advantages and ensures a
+                                        truly exceptional outcome.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Architectural wrap slider -->
+    <section class="bg-dark-green pb-10">
+        <div class="container">
+            <div class="w-full">
+                <div class="js-architectural-wrap-slider relative">
+                    <div
+                        class="flex justify-center items-center border border-[#17585C] rounded-[20px] pt-6 px-6 pb-10 mx-2"
+                    >
+                        <img
+                            src="{{ theme.uri }}/assets/images/assets/images/architectural-wrap/slider/hotels.png"
+                            alt="Student"
+                            class="max-h-[62px] mx-auto"
+                        />
+                        <h3
+                            class="text-light-green font-bold text-center pt-6 text-lg h-20"
+                        >
+                            STUDENT ACCOMODATIONS
+                        </h3>
+                        <p class="text-white text-center pt-2 h-[176px]">
+                            Many UK student accommodations are ditching the
+                            dated look and using architectural wraps to
+                            modernize desks, kitchens, and walls.
+                        </p>
+                    </div>
+
+                    <div
+                        class="flex justify-center items-center border border-[#17585C] rounded-[20px] pt-6 px-6 pb-10 mx-2"
+                    >
+                        <img
+                            src="{{ theme.uri }}/assets/images/assets/images/architectural-wrap/slider/stars.png"
+                            alt="Student"
+                            class="max-h-[62px] mx-auto"
+                        />
+                        <h3
+                            class="text-light-green font-bold text-center pt-6 text-lg h-20"
+                        >
+                            HOTELS & LEISURE
+                        </h3>
+                        <p class="text-white text-center pt-2 h-[176px]">
+                            From fitted units and vanity areas to feature
+                            walls and doors, interior films deliver a
+                            stunning transformation for your hotel
+                            refurbishment.
+                        </p>
+                    </div>
+
+                    <div
+                        class="flex justify-center items-center border border-[#17585C] rounded-[20px] pt-6 px-6 pb-10 mx-2"
+                    >
+                        <img
+                            src="{{ theme.uri }}/assets/images/assets/images/architectural-wrap/slider/building.png"
+                            alt="Student"
+                            class="max-h-[62px] mx-auto"
+                        />
+                        <h3
+                            class="text-light-green font-bold text-center pt-6 text-lg h-20"
+                        >
+                            COMMERCIAL OFFICES
+                        </h3>
+                        <p class="text-white text-center pt-2 h-[176px]">
+                            Give your office a fresh start! Before replacing
+                            furniture, consider architectural film. It
+                            breathes new life into desks, reception areas,
+                            and meeting tables.
+                        </p>
+                    </div>
+
+                    <div
+                        class="flex justify-center items-center border border-[#17585C] rounded-[20px] pt-6 px-6 pb-10 mx-2"
+                    >
+                        <img
+                            src="{{ theme.uri }}/assets/images/assets/images/architectural-wrap/slider/balls.png"
+                            alt="Student"
+                            class="max-h-[62px] mx-auto"
+                        />
+                        <h3
+                            class="text-light-green font-bold text-center pt-6 text-lg h-20"
+                        >
+                            SPORT VENUES
+                        </h3>
+                        <p class="text-white text-center pt-2 h-[176px]">
+                            Skip the high cost of replacing gym lockers,
+                            cubicles, and doors! Refresh them with a whole
+                            new look and feel for a fraction of the price
+                            using architectural wraps.
+                        </p>
+                    </div>
+
+                    <div
+                        class="flex justify-center items-center border border-[#17585C] rounded-[20px] pt-6 px-6 pb-10 mx-2"
+                    >
+                        <img
+                            src="{{ theme.uri }}/assets/images/assets/images/architectural-wrap/slider/building.png"
+                            alt="Student"
+                            class="max-h-[62px] mx-auto"
+                        />
+                        <h3
+                            class="text-light-green font-bold text-center pt-6 text-lg h-20"
+                        >
+                            EDUCATION
+                        </h3>
+                        <p class="text-white text-center pt-2 h-[176px]">
+                            Architectural wraps provide a great option for
+                            schools and colleges to quickly update the look
+                            of their buildings. These wraps can transform
+                            the aesthetic appeal of a campus, creating a
+                            more vibrant and engaging environment.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Infinite marquee -->
+    <section class="bg-dark-green pt-14 lg:pt-20 pb-2 lg:pb-8">
+        <div
+            class="marquee relative w-full max-w-full h-[124px] lg:h-[160px] overflow-x-hidden"
+        >
+            <div
+                class="track absolute whitespace-nowrap will-change-transform"
+            >
+                <div class="content font-bold text-white flex items-center">
+                    <span class="text-[60px] lg:text-[80px]">DESIGN</span>
+                    <i class="fa-solid fa-circle px-6 text-light-green"></i>
+                    <span class="text-[60px] lg:text-[80px]">PRINT</span>
+                    <i class="fa-solid fa-circle px-6 text-light-green"></i>
+                    <span class="text-[60px] lg:text-[80px]">SIGNAGE</span>
+                    <i class="fa-solid fa-circle px-6 text-light-green"></i>
+                    <span class="text-[60px] lg:text-[80px]"
+                        >VEHICLE BRANDING</span
+                    >
+                    <i class="fa-solid fa-circle px-6 text-light-green"></i>
+                    <span class="text-[60px] lg:text-[80px]"
+                        >WINDOW GRAPHICS</span
+                    >
+                    <i class="fa-solid fa-circle px-6 text-light-green"></i>
+                    <span class="ttext-[60px] lg:text-[80px]"
+                        >WALL MURALS</span
+                    >
+                    <i class="fa-solid fa-circle px-6 text-light-green"></i>
+                    <span class="ttext-[60px] lg:text-[80px]">DESIGN</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Autoplaying images slider -->
+    <section class="flex h-[260px] lg:h-[300px] overflow-hidden">
+        <div class="hidden lg:block w-1/3">
+            <div class="js-autoplaying-slider-1">
+                <div class="image h-[300px] overflow-hidden">
+                    <img
+                        src="{{ theme.uri }}/assets/images/assets/images/slider/farmer-copleys.jpg"
+                        alt="Farmer copleys"
+                        class="object-cover object-center w-full h-full min-h-[300px]"
+                    />
+                </div>
+                <div class="image h-[300px] overflow-hidden">
+                    <img
+                        src="{{ theme.uri }}/assets/images/assets/images/slider/solarfast.jpg"
+                        alt="Showbar"
+                        class="object-cover object-center w-full h-full min-h-[300px]"
+                    />
+                </div>
+                <div class="image h-[300px] overflow-hidden">
+                    <img
+                        src="{{ theme.uri }}/assets/images/assets/images/slider/jd-gyms.jpg"
+                        alt="Showbar"
+                        class="object-cover object-center w-full h-full min-h-[300px]"
+                    />
+                </div>
+            </div>
+        </div>
+        <div class="hidden lg:block w-1/3">
+            <div class="js-autoplaying-slider-2">
+                <div class="image h-[300px] overflow-hidden">
+                    <img
+                        src="{{ theme.uri }}/assets/images/assets/images/slider/showbar.png"
+                        alt="Showbar"
+                        class="object-cover object-center w-full h-full min-h-[300px]"
+                    />
+                </div>
+                <div class="image h-[300px] overflow-hidden">
+                    <img
+                        src="{{ theme.uri }}/assets/images/assets/images/slider/honey.jpg"
+                        alt="Solarfast"
+                        class="object-cover object-center w-full h-full min-h-[300px]"
+                    />
+                </div>
+                <div class="image h-[300px] overflow-hidden">
+                    <img
+                        src="{{ theme.uri }}/assets/images/assets/images/slider/honey.jpg"
+                        alt="Solarfast"
+                        class="object-cover object-center w-full h-full min-h-[300px]"
+                    />
+                </div>
+                <div class="image h-[300px] overflow-hidden">
+                    <img
+                        src="{{ theme.uri }}/assets/images/assets/images/slider/Ocho_Hair.jpg"
+                        alt="Solarfast"
+                        class="object-cover object-center w-full h-full min-h-[300px]"
+                    />
+                </div>
+            </div>
+        </div>
+        <div class="hidden lg:block w-1/3">
+            <div class="js-autoplaying-slider-3">
+                <div class="image h-[300px] overflow-hidden">
+                    <img
+                        src="{{ theme.uri }}/assets/images/assets/images/slider/Van_Part-Wrap-3.jpg"
+                        alt="Solarfast"
+                        class="object-cover object-center w-full h-full min-h-[300px]"
+                    />
+                </div>
+                <div class="image h-[300px] overflow-hidden">
+                    <img
+                        src="{{ theme.uri }}/assets/images/assets/images/slider/Excel-Generators-3.jpg"
+                        class="object-cover object-center w-full h-full min-h-[300px]"
+                    />
+                </div>
+                <div class="image h-[300px] overflow-hidden">
+                    <img
+                        src="{{ theme.uri }}/assets/images/assets/images/slider/Wall_Wrap_Brand_Works-3.jpg"
+                        alt="Solarfast"
+                        class="object-cover object-center w-full h-full min-h-[300px]"
+                    />
+                </div>
+            </div>
+        </div>
+        <div class="block lg:hidden w-full">
+            <div class="js-autoplaying-slider-mobile">
+                <div class="image h-[260px] overflow-hidden">
+                    <img
+                        src="{{ theme.uri }}/assets/images/assets/images/slider/farmer-copleys.jpg"
+                        alt="Farmer copleys"
+                        class="object-cover object-center w-full h-full min-h-[260px]"
+                    />
+                </div>
+                <div class="image h-[260px] overflow-hidden">
+                    <img
+                        src="{{ theme.uri }}/assets/images/assets/images/slider/showbar.png"
+                        alt="Showbar"
+                        class="object-cover object-center w-full h-full min-h-[260px]"
+                    />
+                </div>
+                <div class="image h-[260px] overflow-hidden">
+                    <img
+                        src="{{ theme.uri }}/assets/images/assets/images/slider/solarfast.jpg"
+                        alt="Solarfast"
+                        class="object-cover object-center w-full h-full min-h-[260px]"
+                    />
+                </div>
+                <div class="image h-[260px] overflow-hidden">
+                    <img
+                        src="{{ theme.uri }}/assets/images/assets/images/slider/Wall_Wrap_Brand_Works-3.jpg"
+                        alt="Solarfast"
+                        class="object-cover object-center w-full h-full min-h-[260px]"
+                    />
+                </div>
+                <div class="image h-[260px] overflow-hidden">
+                    <img
+                        src="{{ theme.uri }}/assets/images/assets/images/slider/honey.jpg"
+                        alt="Solarfast"
+                        class="object-cover object-center w-full h-full min-h-[260px]"
+                    />
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}
