@@ -10,9 +10,6 @@
         <header class="header">
             {% block header %}
                 <div class="wrapper">
-                    <h1 class="hdr-logo">
-                        <a class="hdr-logo-link" href="{{ site.url }}">{{ site.name }}</a>
-                    </h1>
                     <nav id="nav-main" class="nav-main">
                         {% include 'partials/menu.twig' with {
                             items: menu.get_items
@@ -39,5 +36,11 @@
         {% endblock %}
         {{ function('wp_footer') }}
         {% do action('get_footer') %}
+
+        <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.min.js"></script>
+        <script>
+            AOS.init();
+        </script>
+        <script src="https://cdn.rawgit.com/michalsnik/aos/2.3.1/dist/aos.js"></script>
     </body>
 </html>
