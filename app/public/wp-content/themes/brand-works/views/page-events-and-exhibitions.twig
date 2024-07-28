@@ -1,0 +1,564 @@
+{% extends 'layouts/base.twig' %}
+
+{% block content %}
+    <!-- Hero section -->
+    <section
+        class="relative"
+        style="
+            background-image: url('{{ theme.uri }}/assets/images/assets/images/events-and-exhibitions/events-and-exhibitions-hero.png');
+            object-fit: cover;
+            object-position: center;
+            width: 100%;
+            height: 100%;
+        "
+    >
+        <div
+            class="absolute top-0 left-0 w-full h-full bg-dark-green/90 z-[1] mix-blend-multiply"
+        ></div>
+
+        <div
+            class="absolute bottom-0 left-0 w-full h-20 bg-gradient-to-t from-dark-green z-[2]"
+        ></div>
+
+        <div class="container">
+            <div class="pt-10 lg:pt-[100px] relative z-10">
+                <div class="w-full flex flex-col items-center relative">
+                    <h2
+                        class="text-light-green uppercase text-sm text-center tracking-[0.3em]"
+                    >
+                        EYE CATCHING MARKETING MATERIALS TO GET YOU NOTICED
+                    </h2>
+
+                    <h1
+                        class="font-bold uppercase text-[32px] leading-[35px] lg:leading-[65px] lg:text-[70px] text-center pt-10 lg:pt-14 lg:w-4/5 mx-auto"
+                    >
+                        <span class="text-white"
+                            >MAKING YOU STAND OUT AT </span
+                        ><span class="text-light-green">
+                            EVENTS & EXHIBITIONS</span
+                        >
+                    </h1>
+
+                    <p
+                        class="text-white font-medium text-[22px] leading-[30px] text-center pt-10 lg:pt-[60px] lg:w-[57%] lg:px-10"
+                    >
+                        From eye-catching roller banners to impactful pop-up
+                        displays, Brand Works offers a complete suite of
+                        marketing materials designed to make your stand and
+                        events the stars of the show.
+                    </p>
+                </div>
+
+                <!-- Anchored link buttons -->
+                <div
+                    class="flex flex-wrap gap-x-9 gap-y-6 pt-7 justify-center relative w-full lg:w-3/4 mx-auto"
+                >
+                    <a href="#fabric-displays" class="outline-button"
+                        >FABRIC DISPLAYS</a
+                    >
+
+                    <a href="#roller-banners" class="outline-button"
+                        >ROLLER BANNERS</a
+                    >
+
+                    <a href="#flags" class="outline-button">FLAGS</a>
+
+                    <a href="#pop-ups" class="outline-button">POP UPS</a>
+
+                    <a href="#bollard-covers" class="outline-button"
+                        >BOLLARD COVERS</a
+                    >
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Two column image and text - image left -->
+    <section class="bg-dark-green pb-10" id="fabric-displays">
+        <div class="container">
+            <div
+                class="flex flex-wrap lg:flex-nowrap gap-10 lg:gap-[60px] items-center"
+            >
+                <div
+                    class="w-full lg:w-1/2 lg:min-h-[632px] rounded-[20px] overflow-hidden"
+                >
+                    <img
+                        src="{{ theme.uri }}/assets/images/assets/images/events-and-exhibitions/Fabric Display_Transparent (1).png"
+                        alt="brick wrap"
+                        class="object-cover object-center w-full h-full lg:min-h-[632px]"
+                    />
+                </div>
+                <div class="w-full lg:w-1/2">
+                    <h2
+                        class="font-bold uppercase text-[32px] leading-[35px] lg:leading-[65px] lg:text-[70px] text-white"
+                    >
+                        FABRIC DISPLAYS
+                    </h2>
+
+                    <h3
+                        class="font-medium text-[32px] leading-[35px] pt-8 lg:pt-11 text-light-green"
+                    >
+                        Ditch the Bulk, Embrace the Impact: Fabric Displays
+                        for a Winning Exhibition Presence.
+                    </h3>
+
+                    <p class="text-white pt-10">
+                        Say goodbye to bulky pop-up booths and flimsy banner
+                        stands! Brand Works offers lightweight, portable
+                        fabric displays that are the future of impactful
+                        exhibition experiences. Imagine tossing out the
+                        backaches and wrestling matches with heavy
+                        components. Fabric displays are crafted from
+                        high-quality, wrinkle-resistant fabric, making them
+                        a breeze to transport and set up. Simply pack your
+                        display in a convenient carrying case and you're
+                        ready to wow!<br /><br />
+                        But portability isn't the only benefit. Our
+                        state-of-the-art printing process ensures vibrant
+                        colors and crisp graphics that grab attention and
+                        leave a lasting impression. Fabric displays offer a
+                        seamless, professional look that elevates your brand
+                        presence and sets you apart from the crowd.<br /><br />
+                        We offer a wide range of fabric display options to
+                        suit your specific needs and space limitations. From
+                        pop-up booths and tension fabric walls to hanging
+                        banners and table throws, the versatility of fabric
+                        displays is unmatched.
+                    </p>
+
+                    <div class="hidden lg:block pt-10">
+                        <a
+                            href="{{ site.url }}/contact-us"
+                            target="_self"
+                            class="solid-button-tall max-w-max"
+                        >
+                            START YOUR PROJECT
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Two column image and text - image right -->
+    <section
+        class="bg-gradient-to-b from-dark-green from-0 via-dark-green via-70% to-white to-100% pb-10 lg:pb-20"
+        id="roller-banners"
+    >
+        <div class="container">
+            <div
+                class="flex flex-wrap lg:flex-nowrap gap-10 lg:gap-[60px] items-center"
+            >
+                <div class="w-full lg:w-1/2">
+                    <h2
+                        class="font-bold uppercase text-[32px] leading-[35px] lg:leading-[65px] lg:text-[70px] text-white"
+                    >
+                        ROLLER BANNERS
+                    </h2>
+
+                    <h3
+                        class="font-medium text-[32px] leading-[35px] pt-8 lg:pt-11 text-light-green"
+                    >
+                        Stand Out in a Flash: The Power of Roller Banners
+                    </h3>
+
+                    <p class="text-white pt-10">
+                        Need to grab attention fast at your next event? Look
+                        no further than the roller banner. These
+                        lightweight, retractable displays are the perfect
+                        marketing companions. Unfurl yours in seconds and
+                        transform a blank space into a captivating brand
+                        showcase. High-quality graphics and clear messaging
+                        ensure your brand gets noticed amidst the event
+                        frenzy.<br /><br />
+                        Roller banners aren't just convenient, they're
+                        cost-effective too. Their portability makes them
+                        easy to transport and set up, even for solo
+                        presentations. Plus, they're durable and reusable,
+                        allowing you to leverage them across multiple
+                        events.<br /><br />
+                        Unlike static signage, roller banners can be easily
+                        updated with fresh graphics, keeping your message
+                        always relevant.
+                    </p>
+
+                    <div class="hidden lg:block pt-10">
+                        <a
+                            href="{{ site.url }}/contact-us"
+                            target="_self"
+                            class="solid-button-tall max-w-max"
+                        >
+                            REQUEST A QUOTE
+                        </a>
+                    </div>
+                </div>
+
+                <div
+                    class="w-full lg:w-1/2 lg:min-h-[632px] rounded-[20px] overflow-hidden"
+                >
+                    <img
+                        src="{{ theme.uri }}/assets/images/assets/images/events-and-exhibitions/Roller_Banner_Transparent_Brand Works (1).png"
+                        alt="Flying tiger"
+                        class="object-cover object-center w-full h-full lg:min-h-[632px]"
+                    />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Two column image and text - image left -->
+    <section class="pt-10 lg:pt-20 pb-10 lg:pb-214" id="flags">
+        <div class="container">
+            <div
+                class="flex flex-wrap lg:flex-nowrap gap-10 lg:gap-[60px] items-center"
+            >
+                <div
+                    class="w-full lg:w-1/2 lg:min-h-[632px] rounded-[20px] overflow-hidden"
+                >
+                    <img
+                        src="{{ theme.uri }}/assets/images/assets/images/events-and-exhibitions/Ikea flags (2).jpg"
+                        alt="Locker room"
+                        class="object-cover object-center w-full h-full lg:min-h-[632px]"
+                    />
+                </div>
+                <div class="w-full lg:w-1/2">
+                    <h2
+                        class="font-bold uppercase text-[32px] leading-[35px] lg:leading-[65px] lg:text-[70px] text-light-green"
+                    >
+                        FLAGS
+                    </h2>
+
+                    <h3
+                        class="font-medium text-[32px] leading-[35px] pt-8 lg:pt-11 text-dark-green"
+                    >
+                        Flaunt Your Brand with Custom Flags from Brand Works
+                    </h3>
+
+                    <p class="pt-10">
+                        Flags are more than just fabric flapping in the
+                        breeze; they're vibrant brand ambassadors that
+                        command attention and leave a lasting impression. At
+                        Brand Works, we're your one-stop shop for custom
+                        flag printing, offering a variety of shapes, sizes,
+                        and premium weather-resistant materials to ensure
+                        your message soars high and bold. Whether you choose
+                        classic feather flags or versatile teardrop designs,
+                        we use high-quality inks for double-sided printing,
+                        guaranteeing your brand is seen from every angle.<br /><br />
+                        Custom flags are a powerful marketing tool for any
+                        business. Showcase your brand proudly outside your
+                        storefront, event booth, or construction site.
+                        Announce sales, promotions, or upcoming events with
+                        eye-catching flags that grab attention and drive
+                        traffic. Flags instantly add a touch of vibrancy and
+                        personality to your space, creating a more welcoming
+                        atmosphere for customers. Plus, their durable and
+                        weather-resistant nature makes them ideal for
+                        outdoor advertising, reaching a wide audience and
+                        generating long-lasting brand recognition.
+                    </p>
+
+                    <div class="hidden lg:block pt-10">
+                        <a
+                            href="{{ site.url }}/contact-us"
+                            target="_self"
+                            class="solid-button-tall max-w-max"
+                        >
+                            ENQUIRE
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Two column image and text - image right -->
+    <section class="pt-10 pb-10 lg:pb-20" id="pop-ups">
+        <div class="container">
+            <div
+                class="flex flex-wrap lg:flex-nowrap gap-10 lg:gap-[60px] items-center"
+            >
+                <div class="w-full lg:w-1/2">
+                    <h2
+                        class="font-bold uppercase text-[32px] leading-[35px] lg:leading-[65px] lg:text-[70px] text-light-green"
+                    >
+                        EXHIBITION POP UPS
+                    </h2>
+
+                    <h3
+                        class="font-medium text-[32px] leading-[35px] pt-8 lg:pt-11 text-dark-green"
+                    >
+                        Effortless Impact: Pop Up Displays for Winning
+                        Exhibitions
+                    </h3>
+
+                    <p class="text-dark-green pt-10">
+                        Exhibition halls can be a sensory overload for
+                        attendees. Countless booths vie for attention, but
+                        what if you could rise above the noise with a
+                        display that's both impactful and effortless? Pop up
+                        displays from Brand Works are your secret weapon for
+                        creating a memorable exhibition experience.<br /><br />
+                        Forget complicated setups and wrestling with bulky
+                        components. Our lightweight pop up displays are
+                        designed for ease of use. Simply unfold the frame
+                        and secure the pre-printed graphic panels – your
+                        branded haven is ready in minutes. High-resolution
+                        printing ensures vibrant colours and crisp graphics
+                        that grab attention, while a range of sizes and
+                        configurations let you tailor the booth to your
+                        space and messaging needs.<br /><br />
+                        Pop up displays are a win on multiple fronts. Their
+                        portability eliminates the need for a team of
+                        helpers or dedicated storage, and their durable
+                        construction means they're reusable for maximum
+                        return on investment. Interchangeable graphic panels
+                        allow you to update your message with ease, keeping
+                        your booth fresh and relevant for future
+                        exhibitions.
+                    </p>
+
+                    <div class="hidden lg:block pt-10">
+                        <a
+                            href="{{ site.url }}/contact-us"
+                            target="_self"
+                            class="solid-button-tall max-w-max"
+                        >
+                            REQUEST A QUOTE
+                        </a>
+                    </div>
+                </div>
+
+                <div
+                    class="w-full lg:w-1/2 lg:min-h-[632px] rounded-[20px] overflow-hidden"
+                >
+                    <img
+                        src="{{ theme.uri }}/assets/images/assets/images/events-and-exhibitions/Booth Banner (1).png"
+                        alt="Flying tiger"
+                        class="object-cover object-center w-full h-full lg:min-h-[632px]"
+                    />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Two column image and text - image left -->
+    <section class="pb-10 lg:pb-20" id="bollard-covers">
+        <div class="container">
+            <div
+                class="flex flex-wrap lg:flex-nowrap gap-10 lg:gap-[60px] items-center"
+            >
+                <div
+                    class="w-full lg:w-1/2 lg:min-h-[632px] rounded-[20px] overflow-hidden"
+                >
+                    <img
+                        src="{{ theme.uri }}/assets/images/assets/images/events-and-exhibitions/Bollard_Cover_Stock_Image_4 (1).jpg"
+                        alt="Locker room"
+                        class="object-cover object-center w-full h-full lg:min-h-[632px]"
+                    />
+                </div>
+                <div class="w-full lg:w-1/2">
+                    <h2
+                        class="font-bold uppercase text-[32px] leading-[35px] lg:leading-[65px] lg:text-[70px] text-light-green"
+                    >
+                        BOLLARD COVERS
+                    </h2>
+
+                    <h3
+                        class="font-medium text-[32px] leading-[35px] pt-8 lg:pt-11 text-dark-green"
+                    >
+                        Transform Everyday Objects into Mini Billboards:
+                        Branded Bollard Covers
+                    </h3>
+
+                    <p class="pt-10">
+                        Those ubiquitous bollards lining streets and
+                        walkways? They can be more than just safety
+                        barriers. At Brand Works, we transform them into
+                        silent brand ambassadors with our custom-printed
+                        bollard covers.<br /><br />
+                        Imagine turning these everyday objects into
+                        eye-catching mini billboards. Our durable,
+                        weather-resistant covers are a cost-effective way to
+                        boost brand awareness and deliver targeted messages
+                        directly to pedestrians. They're perfect for
+                        promoting special offers, showcasing your logo, or
+                        simply adding a splash of color to your storefront.
+                        We offer a variety of sizes and printing options to
+                        ensure a perfect fit and a message that resonates
+                        with your audience. Let Brand Works help you turn
+                        everyday objects into brand new marketing
+                        opportunities.
+                    </p>
+
+                    <div class="hidden lg:block pt-10">
+                        <a
+                            href="{{ site.url }}/contact-us"
+                            target="_self"
+                            class="solid-button-tall max-w-max"
+                        >
+                            ENQUIRE
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Infinite marquee -->
+    <section class="bg-dark-green pt-14 lg:pt-20 pb-2 lg:pb-8">
+        <div
+            class="marquee relative w-full max-w-full h-[124px] lg:h-[160px] overflow-x-hidden"
+        >
+            <div
+                class="track absolute whitespace-nowrap will-change-transform"
+            >
+                <div class="content font-bold text-white flex items-center">
+                    <span class="text-[60px] lg:text-[80px]">DESIGN</span>
+                    <i class="fa-solid fa-circle px-6 text-light-green"></i>
+                    <span class="text-[60px] lg:text-[80px]">PRINT</span>
+                    <i class="fa-solid fa-circle px-6 text-light-green"></i>
+                    <span class="text-[60px] lg:text-[80px]">SIGNAGE</span>
+                    <i class="fa-solid fa-circle px-6 text-light-green"></i>
+                    <span class="text-[60px] lg:text-[80px]"
+                        >VEHICLE BRANDING</span
+                    >
+                    <i class="fa-solid fa-circle px-6 text-light-green"></i>
+                    <span class="text-[60px] lg:text-[80px]"
+                        >WINDOW GRAPHICS</span
+                    >
+                    <i class="fa-solid fa-circle px-6 text-light-green"></i>
+                    <span class="ttext-[60px] lg:text-[80px]"
+                        >WALL MURALS</span
+                    >
+                    <i class="fa-solid fa-circle px-6 text-light-green"></i>
+                    <span class="ttext-[60px] lg:text-[80px]">DESIGN</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Autoplaying images slider -->
+    <section class="flex h-[260px] lg:h-[300px] overflow-hidden">
+        <div class="hidden lg:block w-1/3">
+            <div class="js-autoplaying-slider-1">
+                <div class="image h-[300px] overflow-hidden">
+                    <img
+                        src="{{ theme.uri }}/assets/images/assets/images/slider/farmer-copleys.jpg"
+                        alt="Farmer copleys"
+                        class="object-cover object-center w-full h-full min-h-[300px]"
+                    />
+                </div>
+                <div class="image h-[300px] overflow-hidden">
+                    <img
+                        src="{{ theme.uri }}/assets/images/assets/images/slider/solarfast.jpg"
+                        alt="Showbar"
+                        class="object-cover object-center w-full h-full min-h-[300px]"
+                    />
+                </div>
+                <div class="image h-[300px] overflow-hidden">
+                    <img
+                        src="{{ theme.uri }}/assets/images/assets/images/slider/jd-gyms.jpg"
+                        alt="Showbar"
+                        class="object-cover object-center w-full h-full min-h-[300px]"
+                    />
+                </div>
+            </div>
+        </div>
+        <div class="hidden lg:block w-1/3">
+            <div class="js-autoplaying-slider-2">
+                <div class="image h-[300px] overflow-hidden">
+                    <img
+                        src="{{ theme.uri }}/assets/images/assets/images/slider/showbar.png"
+                        alt="Showbar"
+                        class="object-cover object-center w-full h-full min-h-[300px]"
+                    />
+                </div>
+                <div class="image h-[300px] overflow-hidden">
+                    <img
+                        src="{{ theme.uri }}/assets/images/assets/images/slider/honey.jpg"
+                        alt="Solarfast"
+                        class="object-cover object-center w-full h-full min-h-[300px]"
+                    />
+                </div>
+                <div class="image h-[300px] overflow-hidden">
+                    <img
+                        src="{{ theme.uri }}/assets/images/assets/images/slider/honey.jpg"
+                        alt="Solarfast"
+                        class="object-cover object-center w-full h-full min-h-[300px]"
+                    />
+                </div>
+                <div class="image h-[300px] overflow-hidden">
+                    <img
+                        src="{{ theme.uri }}/assets/images/assets/images/slider/Ocho_Hair.jpg"
+                        alt="Solarfast"
+                        class="object-cover object-center w-full h-full min-h-[300px]"
+                    />
+                </div>
+            </div>
+        </div>
+        <div class="hidden lg:block w-1/3">
+            <div class="js-autoplaying-slider-3">
+                <div class="image h-[300px] overflow-hidden">
+                    <img
+                        src="{{ theme.uri }}/assets/images/assets/images/slider/Van_Part-Wrap-3.jpg"
+                        alt="Solarfast"
+                        class="object-cover object-center w-full h-full min-h-[300px]"
+                    />
+                </div>
+                <div class="image h-[300px] overflow-hidden">
+                    <img
+                        src="{{ theme.uri }}/assets/images/assets/images/slider/Excel-Generators-3.jpg"
+                        class="object-cover object-center w-full h-full min-h-[300px]"
+                    />
+                </div>
+                <div class="image h-[300px] overflow-hidden">
+                    <img
+                        src="{{ theme.uri }}/assets/images/assets/images/slider/Wall_Wrap_Brand_Works-3.jpg"
+                        alt="Solarfast"
+                        class="object-cover object-center w-full h-full min-h-[300px]"
+                    />
+                </div>
+            </div>
+        </div>
+        <div class="block lg:hidden w-full">
+            <div class="js-autoplaying-slider-mobile">
+                <div class="image h-[260px] overflow-hidden">
+                    <img
+                        src="{{ theme.uri }}/assets/images/assets/images/slider/farmer-copleys.jpg"
+                        alt="Farmer copleys"
+                        class="object-cover object-center w-full h-full min-h-[260px]"
+                    />
+                </div>
+                <div class="image h-[260px] overflow-hidden">
+                    <img
+                        src="{{ theme.uri }}/assets/images/assets/images/slider/showbar.png"
+                        alt="Showbar"
+                        class="object-cover object-center w-full h-full min-h-[260px]"
+                    />
+                </div>
+                <div class="image h-[260px] overflow-hidden">
+                    <img
+                        src="{{ theme.uri }}/assets/images/assets/images/slider/solarfast.jpg"
+                        alt="Solarfast"
+                        class="object-cover object-center w-full h-full min-h-[260px]"
+                    />
+                </div>
+                <div class="image h-[260px] overflow-hidden">
+                    <img
+                        src="{{ theme.uri }}/assets/images/assets/images/slider/Wall_Wrap_Brand_Works-3.jpg"
+                        alt="Solarfast"
+                        class="object-cover object-center w-full h-full min-h-[260px]"
+                    />
+                </div>
+                <div class="image h-[260px] overflow-hidden">
+                    <img
+                        src="{{ theme.uri }}/assets/images/assets/images/slider/honey.jpg"
+                        alt="Solarfast"
+                        class="object-cover object-center w-full h-full min-h-[260px]"
+                    />
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}
