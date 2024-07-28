@@ -1,0 +1,22 @@
+{
+    "name": "brand-works",
+    "version": "1.0.0",
+    "description": "[![Build Status](https://travis-ci.com/timber/starter-theme.svg?branch=master)](https://travis-ci.com/github/timber/starter-theme) [![Packagist Version](https://img.shields.io/packagist/v/timber/starter-theme?include_prereleases)](https://packagist.org/packages/timber/starter-theme)",
+    "main": "index.js",
+    "directories": {
+        "test": "tests"
+    },
+    "scripts": {
+        "build": "postcss assets/styles/input.css -o style.css",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@fullhuman/postcss-purgecss": "^6.0.0",
+        "autoprefixer": "^10.4.19",
+        "postcss-cli": "^11.0.0",
+        "tailwindcss": "^3.4.7"
+    }
+}
