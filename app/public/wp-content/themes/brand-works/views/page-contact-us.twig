@@ -1,0 +1,292 @@
+{% extends 'layouts/base.twig' %}
+
+{% block content %}
+    <!-- Hero section -->
+    <section class="bg-dark-green">
+        <div class="container">
+            <div class="pt-10 lg:pt-[100px] pb-10 lg:pb-[84px] relative">
+                <div
+                    class="absolute top-20 left-1/2 -translate-x-1/2 w-full flex justify-center"
+                >
+                    <img
+                        src="{{ theme.uri }}/assets/images/assets/images/Hero Section_Gradient.svg"
+                        alt="Hero gradient"
+                        class="w-[800px] h-auto"
+                    />
+                </div>
+
+                <div class="w-full flex flex-col items-center relative">
+                    <h1
+                        class="font-bold uppercase text-[32px] leading-[35px] lg:leading-[65px] lg:text-[70px] text-center pt-10 lg:pt-14"
+                    >
+                        <span class="text-light-green"
+                            >WE'RE A FRIENDLY BUNCH, <br /></span
+                        ><span class="text-white"
+                            >DROP US A MESSAGE...</span
+                        >
+                    </h1>
+
+                    <p
+                        class="text-white font-medium text-[22px] leading-[30px] text-center pt-10 lg:pt-[60px] lg:w-2/3"
+                    >
+                        We're just one click away to help you take your
+                        business from great to incredible. Just click the
+                        button below and share more details of your project
+                        with us.
+                    </p>
+
+                    <div class="mt-8">
+                        <a
+                            href="./contact-us.html"
+                            target="_self"
+                            class="solid-button max-w-max"
+                        >
+                            GET IN TOUCH
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3 Column with map -->
+    <section class="bg-dark-green">
+        <div class="flex flex-wrap relative">
+            <div
+                class="w-full lg:w-1/3 bg-light-green flex flex-col justify-end px-4 lg:px-11 py-10 lg:py-11"
+            >
+                <h3 class="text-dark-green font-semibold text-[32px]">
+                    Meet Us.
+                </h3>
+                <a
+                    href="tel:0113 322 3531"
+                    target="_self"
+                    class="flex gap-4 items-center text-dark-green pt-5"
+                >
+                    <i class="fa-solid fa-phone"></i>
+                    <span class="pt-1 text-lg">0113 322 3531</span>
+                </a>
+                <a
+                    href="mailto:hello@brand-works.co.uk"
+                    target="_self"
+                    class="flex gap-4 items-center text-dark-green pt-1"
+                >
+                    <i class="fa-solid fa-envelope"></i>
+                    <span class="pt-1 text-lg"
+                        >hello@brand-works.co.uk</span
+                    >
+                </a>
+                <span class="flex gap-4 items-center text-dark-green pt-1">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span class="pt-1 text-lg">
+                        Unit 17, Green Lane Networkcentre, Boothroyds Way,
+                        Featherstone, Pontefract, WF7 6EN
+                    </span>
+                </span>
+            </div>
+            <div class="w-full lg:w-1/3">
+                <img
+                    src="{{ theme.uri }}/assets/images/assets/images/networkcentre.png"
+                    alt="Map"
+                    class="w-full h-full object-cover object-center"
+                />
+            </div>
+            <div
+                class="w-full lg:w-1/3 bg-[#063433] flex flex-col justify-end px-4 lg:px-11 py-10 lg:py-11"
+            >
+                <h3 class="text-light-green font-semibold text-[32px]">
+                    Our Credentials.
+                </h3>
+                <p class="text-white pt-6">
+                    We pride ourselves on health and safety, that's why we
+                    ensure we're always up to date on the latest
+                    regulations.
+                </p>
+                <div
+                    class="flex flex-wrap xl:flex-nowrap gap-5 items-center pt-10"
+                >
+                    <img
+                        src="{{ theme.uri }}/assets/images/assets/accreditations/cscs.svg"
+                        alt="CSCS"
+                        class="w-full h-full max-h-11 max-w-20 -ml-4 lg:-ml-[18px]"
+                    />
+
+                    <img
+                        src="{{ theme.uri }}/assets/images/assets/accreditations/ipaf.svg"
+                        alt="IPAF"
+                        class="w-full h-full max-h-11 max-w-20"
+                    />
+
+                    <img
+                        src="{{ theme.uri }}/assets/images/assets/accreditations/ukata.svg"
+                        alt="UKATA"
+                        class="w-full h-full max-h-11 max-w-20"
+                    />
+
+                    <img
+                        src="{{ theme.uri }}/assets/images/assets/accreditations/pasma.svg"
+                        alt="PASMA"
+                        class="w-full h-full max-h-11 max-w-20"
+                    />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Infinite marquee -->
+    <section class="bg-dark-green pt-14 lg:pt-20 pb-2 lg:pb-8">
+        <div
+            class="marquee relative w-full max-w-full h-[124px] lg:h-[160px] overflow-x-hidden"
+        >
+            <div
+                class="track absolute whitespace-nowrap will-change-transform"
+            >
+                <div class="content font-bold text-white flex items-center">
+                    <span class="text-[60px] lg:text-[80px]">DESIGN</span>
+                    <i class="fa-solid fa-circle px-6 text-light-green"></i>
+                    <span class="text-[60px] lg:text-[80px]">PRINT</span>
+                    <i class="fa-solid fa-circle px-6 text-light-green"></i>
+                    <span class="text-[60px] lg:text-[80px]">SIGNAGE</span>
+                    <i class="fa-solid fa-circle px-6 text-light-green"></i>
+                    <span class="text-[60px] lg:text-[80px]"
+                        >VEHICLE BRANDING</span
+                    >
+                    <i class="fa-solid fa-circle px-6 text-light-green"></i>
+                    <span class="text-[60px] lg:text-[80px]"
+                        >WINDOW GRAPHICS</span
+                    >
+                    <i class="fa-solid fa-circle px-6 text-light-green"></i>
+                    <span class="ttext-[60px] lg:text-[80px]"
+                        >WALL MURALS</span
+                    >
+                    <i class="fa-solid fa-circle px-6 text-light-green"></i>
+                    <span class="ttext-[60px] lg:text-[80px]">DESIGN</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Autoplaying images slider -->
+    <section class="flex h-[260px] lg:h-[300px] overflow-hidden">
+        <div class="hidden lg:block w-1/3">
+            <div class="js-autoplaying-slider-1">
+                <div class="image h-[300px] overflow-hidden">
+                    <img
+                        src="{{ theme.uri }}/assets/images/assets/images/slider/farmer-copleys.jpg"
+                        alt="Farmer copleys"
+                        class="object-cover object-center w-full h-full min-h-[300px]"
+                    />
+                </div>
+                <div class="image h-[300px] overflow-hidden">
+                    <img
+                        src="{{ theme.uri }}/assets/images/assets/images/slider/solarfast.jpg"
+                        alt="Showbar"
+                        class="object-cover object-center w-full h-full min-h-[300px]"
+                    />
+                </div>
+                <div class="image h-[300px] overflow-hidden">
+                    <img
+                        src="{{ theme.uri }}/assets/images/assets/images/slider/jd-gyms.jpg"
+                        alt="Showbar"
+                        class="object-cover object-center w-full h-full min-h-[300px]"
+                    />
+                </div>
+            </div>
+        </div>
+        <div class="hidden lg:block w-1/3">
+            <div class="js-autoplaying-slider-2">
+                <div class="image h-[300px] overflow-hidden">
+                    <img
+                        src="{{ theme.uri }}/assets/images/assets/images/slider/showbar.png"
+                        alt="Showbar"
+                        class="object-cover object-center w-full h-full min-h-[300px]"
+                    />
+                </div>
+                <div class="image h-[300px] overflow-hidden">
+                    <img
+                        src="{{ theme.uri }}/assets/images/assets/images/slider/honey.jpg"
+                        alt="Solarfast"
+                        class="object-cover object-center w-full h-full min-h-[300px]"
+                    />
+                </div>
+                <div class="image h-[300px] overflow-hidden">
+                    <img
+                        src="{{ theme.uri }}/assets/images/assets/images/slider/honey.jpg"
+                        alt="Solarfast"
+                        class="object-cover object-center w-full h-full min-h-[300px]"
+                    />
+                </div>
+                <div class="image h-[300px] overflow-hidden">
+                    <img
+                        src="{{ theme.uri }}/assets/images/assets/images/slider/Ocho_Hair.jpg"
+                        alt="Solarfast"
+                        class="object-cover object-center w-full h-full min-h-[300px]"
+                    />
+                </div>
+            </div>
+        </div>
+        <div class="hidden lg:block w-1/3">
+            <div class="js-autoplaying-slider-3">
+                <div class="image h-[300px] overflow-hidden">
+                    <img
+                        src="{{ theme.uri }}/assets/images/assets/images/slider/Van_Part-Wrap-3.jpg"
+                        alt="Solarfast"
+                        class="object-cover object-center w-full h-full min-h-[300px]"
+                    />
+                </div>
+                <div class="image h-[300px] overflow-hidden">
+                    <img
+                        src="{{ theme.uri }}/assets/images/assets/images/slider/Excel-Generators-3.jpg"
+                        class="object-cover object-center w-full h-full min-h-[300px]"
+                    />
+                </div>
+                <div class="image h-[300px] overflow-hidden">
+                    <img
+                        src="{{ theme.uri }}/assets/images/assets/images/slider/Wall_Wrap_Brand_Works-3.jpg"
+                        alt="Solarfast"
+                        class="object-cover object-center w-full h-full min-h-[300px]"
+                    />
+                </div>
+            </div>
+        </div>
+        <div class="block lg:hidden w-full">
+            <div class="js-autoplaying-slider-mobile">
+                <div class="image h-[260px] overflow-hidden">
+                    <img
+                        src="{{ theme.uri }}/assets/images/assets/images/slider/farmer-copleys.jpg"
+                        alt="Farmer copleys"
+                        class="object-cover object-center w-full h-full min-h-[260px]"
+                    />
+                </div>
+                <div class="image h-[260px] overflow-hidden">
+                    <img
+                        src="{{ theme.uri }}/assets/images/assets/images/slider/showbar.png"
+                        alt="Showbar"
+                        class="object-cover object-center w-full h-full min-h-[260px]"
+                    />
+                </div>
+                <div class="image h-[260px] overflow-hidden">
+                    <img
+                        src="{{ theme.uri }}/assets/images/assets/images/slider/solarfast.jpg"
+                        alt="Solarfast"
+                        class="object-cover object-center w-full h-full min-h-[260px]"
+                    />
+                </div>
+                <div class="image h-[260px] overflow-hidden">
+                    <img
+                        src="{{ theme.uri }}/assets/images/assets/images/slider/Wall_Wrap_Brand_Works-3.jpg"
+                        alt="Solarfast"
+                        class="object-cover object-center w-full h-full min-h-[260px]"
+                    />
+                </div>
+                <div class="image h-[260px] overflow-hidden">
+                    <img
+                        src="{{ theme.uri }}/assets/images/assets/images/slider/honey.jpg"
+                        alt="Solarfast"
+                        class="object-cover object-center w-full h-full min-h-[260px]"
+                    />
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}
