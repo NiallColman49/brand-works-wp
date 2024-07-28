@@ -1,0 +1,909 @@
+{% extends 'layouts/base.twig' %}
+
+{% block content %}
+    <!-- Hero section -->
+    <section
+        class="relative"
+        style="
+            background-image: url('{{ theme.uri }}/assets/images/assets/images/hero/print-hero.jpg');
+            object-fit: cover;
+            object-position: center;
+            width: 100%;
+            height: 100%;
+        "
+    >
+        <div
+            class="absolute top-0 left-0 w-full h-full bg-dark-green/90 z-[1] mix-blend-multiply"
+        ></div>
+
+        <div
+            class="absolute bottom-0 left-0 w-full h-20 bg-gradient-to-t from-dark-green z-[2]"
+        ></div>
+
+        <div class="container">
+            <div
+                class="pt-10 lg:pt-[100px] pb-10 lg:pb-[84px] relative z-10"
+            >
+                <div class="w-full flex flex-col items-center relative">
+                    <h2
+                        class="text-light-green uppercase text-sm text-center tracking-[0.3em]"
+                    >
+                        STOP, LOOK, ENGAGE: PRINT THAT MAKES A LASTING
+                        IMPRESSION.
+                    </h2>
+
+                    <h1
+                        class="font-bold uppercase text-[32px] leading-[35px] lg:leading-[65px] lg:text-[70px] text-center pt-10 lg:pt-14 lg:w-4/5 mx-auto"
+                    >
+                        <span class="text-white"
+                            >FIRST IMPRESSIONS MATTER </span
+                        ><span class="text-light-green">
+                            PRINT & DISPLAY</span
+                        >
+                    </h1>
+
+                    <p
+                        class="text-white font-medium text-[22px] leading-[30px] text-center pt-10 lg:pt-[60px] lg:w-[57%] lg:px-10"
+                    >
+                        From wall murals to eye-catching floor graphics,
+                        printed displays make your brand impossible to
+                        ignore.
+                    </p>
+                </div>
+
+                <!-- Anchored link buttons -->
+                <div
+                    class="flex flex-wrap gap-x-9 gap-y-6 pt-7 justify-center relative w-full lg:w-3/4 mx-auto"
+                >
+                    <a href="#wall-graphics" class="outline-button"
+                        >WALL GRAPHICS</a
+                    >
+
+                    <a href="#window-graphics" class="outline-button"
+                        >WINDOW GRAPHICS</a
+                    >
+
+                    <a href="#floor-graphics" class="outline-button"
+                        >FLOOR GRAPHICS</a
+                    >
+
+                    <a href="#hoardings" class="outline-button"
+                        >HOARDINGS</a
+                    >
+
+                    <a href="#display" class="outline-button">DISPLAY</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Two column image and text - image left -->
+    <section class="bg-dark-green pb-10 lg:pb-20" id="wall-graphics">
+        <div class="container">
+            <div
+                class="flex flex-wrap lg:flex-nowrap gap-10 lg:gap-[60px] items-center"
+            >
+                <div
+                    class="w-full lg:w-1/2 lg:min-h-[632px] rounded-[20px] overflow-hidden"
+                >
+                    <img
+                        src="{{ theme.uri }}/assets/images/assets/images/print-and-display/Jungle_Wall_F.jpg"
+                        alt="brick wrap"
+                        class="object-cover object-center w-full h-full lg:min-h-[632px]"
+                    />
+                </div>
+                <div class="w-full lg:w-1/2">
+                    <h2
+                        class="font-bold uppercase text-[32px] leading-[35px] lg:leading-[65px] lg:text-[70px] text-white"
+                    >
+                        WALL GRAPHICS
+                    </h2>
+
+                    <h3
+                        class="font-medium text-[32px] leading-[35px] pt-8 lg:pt-11 text-light-green"
+                    >
+                        Transform your walls into branded masterpieces!
+                        Engage visitors and maintain brand consistency with
+                        cut graphics or wall wraps.
+                    </h3>
+
+                    <p class="text-white pt-10">
+                        Imagine your walls coming alive, transformed from
+                        blank canvases into captivating experiences that
+                        resonate with your brand and enthrall your visitors.
+                        At Brand Works, we don't just create wall graphics
+                        and murals - we craft powerful storytelling tools
+                        that elevate your brand identity and spark
+                        engagement within your space.<br /><br />High-impact
+                        wall graphics act as a constant visual reminder of
+                        your brand, etching your identity into the minds of
+                        your customers. Long after they leave your premises,
+                        the lasting impression of your brand and its values
+                        will stay with them.<br /><br />Don't be limited by
+                        scale. A strategically placed logo graphic can make
+                        a powerful statement about your brand, while a full
+                        wall mural can transform your space into a truly
+                        immersive brand experience. Our team of experts will
+                        work closely with you to understand your needs and
+                        create a solution that perfectly complements your
+                        brand identity and space.
+                    </p>
+
+                    <div class="hidden lg:block pt-10">
+                        <a
+                            href="{{ site.url }}/contact-us"
+                            target="_self"
+                            class="solid-button-tall max-w-max"
+                        >
+                            START YOUR PROJECT
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Two column image and text - image right -->
+    <section
+        class="bg-gradient-to-b from-dark-green from-0 via-dark-green via-70% to-white to-100% pt-10 pb-10 lg:pb-20"
+        id="window-graphics"
+    >
+        <div class="container">
+            <div
+                class="flex flex-wrap lg:flex-nowrap gap-10 lg:gap-[60px] items-center"
+            >
+                <div class="w-full lg:w-1/2">
+                    <h2
+                        class="font-bold uppercase text-[32px] leading-[35px] lg:leading-[65px] lg:text-[70px] text-white"
+                    >
+                        WINDOW GRAPHICS
+                    </h2>
+
+                    <h3
+                        class="font-medium text-[32px] leading-[35px] pt-8 lg:pt-11 text-light-green"
+                    >
+                        Eye-catching displays with custom window graphics
+                        that stop passersby in their tracks and entices them
+                        to explore what's inside.
+                    </h3>
+
+                    <p class="text-white pt-10">
+                        Unleash the hidden potential of your storefront!
+                        Don't let empty windows be a missed opportunity to
+                        connect with potential customers. Brand Works
+                        transforms them into silent salespeople with a
+                        variety of window graphic solutions. Showcase your
+                        brand personality with eye-catching printed designs
+                        that match your existing branding.<br /><br />
+                        Need to combine style with safety? Our window
+                        manifestation options include frosting for a touch
+                        of privacy and contra vision film, allowing natural
+                        light in while maintaining some level of obscurity
+                        from the outside. No matter your needs, our wide
+                        range of high-quality print materials ensures your
+                        message gets seen, whether it's a temporary
+                        promotion or a long-lasting brand statement. Contact
+                        Brand Works today for a free consultation and unlock
+                        the full potential of your storefront!
+                    </p>
+
+                    <div class="hidden lg:block pt-10">
+                        <a
+                            href="{{ site.url }}/contact-us"
+                            target="_self"
+                            class="solid-button-tall max-w-max"
+                        >
+                            REQUEST A QUOTE
+                        </a>
+                    </div>
+                </div>
+
+                <div
+                    class="w-full lg:w-1/2 lg:min-h-[632px] rounded-[20px] overflow-hidden"
+                >
+                    <img
+                        src="{{ theme.uri }}/assets/images/assets/images/print-and-display/Fibre_Bar_1.jpg"
+                        alt="Flying tiger"
+                        class="object-cover object-center w-full h-full lg:min-h-[632px]"
+                    />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Two column image and text - image left -->
+    <section class="pt-10 lg:pt-20 pb-10 lg:pb-20" id="floor-graphics">
+        <div class="container">
+            <div
+                class="flex flex-wrap lg:flex-nowrap gap-10 lg:gap-[60px] items-center"
+            >
+                <div
+                    class="w-full lg:w-1/2 lg:min-h-[632px] rounded-[20px] overflow-hidden"
+                >
+                    <img
+                        src="{{ theme.uri }}/assets/images/assets/images/print-and-display/Farmer_Copleys_10.jpg"
+                        alt="Locker room"
+                        class="object-cover object-center w-full h-full lg:min-h-[632px]"
+                    />
+                </div>
+                <div class="w-full lg:w-1/2">
+                    <h2
+                        class="font-bold uppercase text-[32px] leading-[35px] lg:leading-[65px] lg:text-[70px] text-light-green"
+                    >
+                        FLOOR GRAPHICS
+                    </h2>
+
+                    <h3
+                        class="font-medium text-[32px] leading-[35px] pt-8 lg:pt-11 text-dark-green"
+                    >
+                        Step up your marketing and wayfinding! Printed floor
+                        graphics guide customers, reinforce safety messages,
+                        and create temporary promotions – all underfoot.
+                    </h3>
+
+                    <p class="pt-10">
+                        Brand Works can create impactful floor graphics that
+                        serve a multitude of purposes. Need to subtly guide
+                        customers through your store layout? We can design
+                        clear wayfinding graphics that keep them moving in
+                        the right direction. Enhancing safety is a priority?
+                        We can create floor graphics that remind staff and
+                        visitors of important health and safety regulations.
+                        And for temporary marketing campaigns, floor
+                        graphics offer a high-impact platform to promote new
+                        products or special offers.<br /><br />
+                        Made with durable, non-slip materials, Brand Works'
+                        floor graphics solutions are as functional as they
+                        are eye-catching. Let us help you unlock the hidden
+                        potential of your floors!
+                    </p>
+
+                    <div class="hidden lg:block pt-10">
+                        <a
+                            href="{{ site.url }}/contact-us"
+                            target="_self"
+                            class="solid-button-tall max-w-max"
+                        >
+                            BOOK A DESIGN CONSULTATION
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Two column image and text - image right -->
+    <section class="pt-10 pb-10 lg:pb-28" id="hoardings">
+        <div class="container">
+            <div
+                class="flex flex-wrap lg:flex-nowrap gap-10 lg:gap-[60px] items-center"
+            >
+                <div class="w-full lg:w-1/2">
+                    <h2
+                        class="font-bold uppercase text-[32px] leading-[35px] lg:leading-[65px] lg:text-[70px] text-light-green"
+                    >
+                        HOARDINGS
+                    </h2>
+
+                    <h3
+                        class="font-medium text-[32px] leading-[35px] pt-8 lg:pt-11 text-dark-green"
+                    >
+                        Safety & Impact: The Perfect Hoarding Balance 
+                    </h3>
+
+                    <p class="text-dark-green pt-10">
+                        Don't let your construction site be a missed
+                        opportunity! Brand Works designs, prints, and
+                        installs high-impact construction site hoardings
+                        that transform your temporary space into a
+                        captivating billboard for your upcoming development.
+                        From eye-catching visuals that pique curiosity to
+                        informative messaging that generates excitement, our
+                        custom hoardings will stop potential customers in
+                        their tracks and get your project buzzing from the
+                        get-go.<br /><br />
+                        We understand the importance of safety and
+                        compliance when it comes to construction signage.
+                        Our team ensures your hoardings meet all relevant
+                        regulations while still delivering a visually
+                        stunning and impactful message. Let's turn your
+                        construction site into a powerful marketing tool
+                        that not only generates interest but also adheres to
+                        all safety guidelines - contact Brand Works today!
+                    </p>
+
+                    <div class="hidden lg:block pt-10">
+                        <a
+                            href="{{ site.url }}/contact-us"
+                            target="_self"
+                            class="solid-button-tall max-w-max"
+                        >
+                            DRIVE MORE LEADS
+                        </a>
+                    </div>
+                </div>
+
+                <div
+                    class="w-full lg:w-1/2 lg:min-h-[632px] rounded-[20px] overflow-hidden"
+                >
+                    <img
+                        src="{{ theme.uri }}/assets/images/assets/images/print-and-display/Hoardings_Flag.jpg"
+                        alt="Flying tiger"
+                        class="object-cover object-center w-full h-full lg:min-h-[632px]"
+                    />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Return on investment section -->
+    <section class="py-10 lg:py-20 bg-dark-green">
+        <div class="container">
+            <h2
+                class="w-full font-bold uppercase text-[32px] leading-[35px] lg:leading-[65px] lg:text-[70px] text-center pb-10 lg:pb-20"
+            >
+                <span class="text-light-green"
+                    >RETURN ON INVESTMENT<br
+                /></span>
+                <span class="text-white">OF PRINT & DISPLAY</span>
+            </h2>
+
+            <div
+                class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4"
+            >
+                <div
+                    class="col-span-1 border border-white rounded-[20px] flex flex-col items-center text-white p-6 lg:p-10"
+                >
+                    <img
+                        src="{{ theme.uri }}/assets/images/assets/images/investment-icons/pound-up.svg"
+                        alt="Pound increase"
+                        data-mh="icon"
+                    />
+
+                    <h3
+                        data-mh="title"
+                        class="font-bold text-lg text-light-green leading-[26px] text-center pt-8"
+                    >
+                        MEASURABLE SALES
+                    </h3>
+
+                    <p
+                        data-mh="content"
+                        class="text-white text-center pt-6"
+                    >
+                        For promotional displays specifically tied to a
+                        particular product or service, you can track sales
+                        figures before, during, and after the campaign to
+                        see if there's a measurable uplift.
+                    </p>
+                </div>
+
+                <div
+                    class="col-span-1 border border-white rounded-[20px] flex flex-col items-center text-white p-6 lg:p-10"
+                >
+                    <img
+                        src="{{ theme.uri }}/assets/images/assets/images/investment-icons/person.svg"
+                        alt="Person"
+                        data-mh="icon"
+                    />
+
+                    <h3
+                        data-mh="title"
+                        class="font-bold text-lg text-light-green leading-[26px] text-center pt-8"
+                    >
+                        INCREASED BRAND AWARENESS
+                    </h3>
+
+                    <p
+                        class="text-white text-center pt-6"
+                        data-mh="content"
+                    >
+                        Eye-catching displays put your brand in front of
+                        potential customers, increasing brand awareness and
+                        recall. This can lead to increased website traffic,
+                        phone calls, or foot traffic to your store. You can
+                        track these metrics to understand the reach of your
+                        campaign.
+                    </p>
+                </div>
+
+                <div
+                    class="col-span-1 border border-white rounded-[20px] flex flex-col items-center text-white p-6 lg:p-10"
+                >
+                    <img
+                        src="{{ theme.uri }}/assets/images/assets/images/investment-icons/piggy-bank.svg"
+                        alt="Piggy bank"
+                        data-mh="icon"
+                    />
+
+                    <h3
+                        data-mh="title"
+                        class="font-bold text-lg text-light-green leading-[26px] text-center pt-8"
+                    >
+                        TARGETED REACH
+                    </h3>
+
+                    <p
+                        data-mh="content"
+                        class="text-white text-center pt-6"
+                    >
+                        You can strategically place print and display
+                        materials to reach specific demographics or
+                        locations. Counting foot traffic after a display is
+                        installed in a high-visibility area can give you a
+                        sense of its effectiveness.
+                    </p>
+                </div>
+
+                <div
+                    class="col-span-1 border border-white rounded-[20px] flex flex-col items-center text-white p-6 lg:p-10"
+                >
+                    <img
+                        src="{{ theme.uri }}/assets/images/assets/images/investment-icons/merit.svg"
+                        alt="Merit"
+                        data-mh="icon"
+                    />
+
+                    <h3
+                        data-mh="title"
+                        class="font-bold text-lg text-light-green leading-[26px] text-center pt-8"
+                    >
+                        IMPROVED BRAND CREDIBILITY
+                    </h3>
+
+                    <p
+                        data-mh="content"
+                        class="text-white text-center pt-6"
+                    >
+                        High-quality printed materials project a
+                        professional image and build trust with potential
+                        customers. While it's difficult to directly measure
+                        the impact on sales, improved brand perception can
+                        translate to higher customer lifetime value.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Two column image and text - image left -->
+    <section class="pt-10 pb-10 lg:pb-20" id="chapter-8">
+        <div class="container">
+            <div
+                class="flex flex-wrap lg:flex-nowrap gap-10 lg:gap-[60px] items-center"
+            >
+                <div
+                    class="w-full lg:w-1/2 lg:min-h-[632px] rounded-[20px] overflow-hidden"
+                >
+                    <img
+                        src="{{ theme.uri }}/assets/images/assets/images/print-and-display/Ikea flags.jpg"
+                        alt="Locker room"
+                        class="object-cover object-center w-full h-full lg:min-h-[632px]"
+                    />
+                </div>
+                <div class="w-full lg:w-1/2">
+                    <h2
+                        class="font-bold uppercase text-[32px] leading-[35px] lg:leading-[65px] lg:text-[70px] text-light-green"
+                    >
+                        DISPLAY
+                    </h2>
+
+                    <h3
+                        class="font-medium text-[32px] leading-[35px] pt-8 lg:pt-11 text-dark-green"
+                    >
+                        Don't Stop at the Storefront: A Complete Suite of
+                        Printed Marketing Tools to Capture Attention. 
+                    </h3>
+
+                    <p class="pt-10">
+                        Brand Works goes beyond walls and windows! We offer
+                        a complete suite of printed marketing essentials to
+                        amplify your brand presence. From eye-catching flags
+                        and banners that dominate outdoor spaces to
+                        informative A-frames and stylish bollard covers, we
+                        have everything you need to grab attention and
+                        solidify your brand in the minds of potential
+                        customers. Contact us today to discuss your complete
+                        signage and display needs!
+                        <span class="block font-bold pt-4"
+                            >&#8226;&nbsp;Flags</span
+                        >
+                        <span class="block font-bold pt-2"
+                            >&#8226;&nbsp;banners</span
+                        >
+                        <span class="block font-bold pt-2"
+                            >&#8226;&nbsp;Bollard Covers</span
+                        >
+                        <span class="block font-bold pt-2"
+                            >&#8226;&nbsp;A-Frames / Pavement signs</span
+                        >
+                        <span class="block font-bold pt-2"
+                            >&#8226;&nbsp;Stickers & Labels</span
+                        >
+                    </p>
+
+                    <div class="hidden lg:block pt-10">
+                        <a
+                            href="{{ site.url }}/contact-us"
+                            target="_self"
+                            class="solid-button-tall max-w-max"
+                        >
+                            GET IN TOUCH
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trusted by logos slider -->
+    <section class="pb-10 lg:pb-20">
+        <div class="container">
+            <div
+                class="js-trusted-by-slider py-10 w-full flex justify-center"
+            >
+                <div>
+                    <div class="flex justify-center items-center h-[126px]">
+                        <img
+                            src="{{ theme.uri }}/assets/images/assets/images/vehicle-branding/accreditations/3M_wordmark.svg.png"
+                            alt="Asda"
+                            class="max-w-[216px] max-h-[126px] mx-auto"
+                        />
+                    </div>
+                </div>
+                <div>
+                    <div class="flex justify-center items-center h-[126px]">
+                        <img
+                            src="{{ theme.uri }}/assets/images/assets/images/vehicle-branding/accreditations/arlon-logo.webp"
+                            alt="Asda"
+                            class="max-w-[216px] max-h-[126px] mx-auto"
+                        />
+                    </div>
+                </div>
+                <div>
+                    <div class="flex justify-center items-center h-[126px]">
+                        <img
+                            src="{{ theme.uri }}/assets/images/assets/images/vehicle-branding/accreditations/1280px-Orafol_logo.svg.png"
+                            alt="Asda"
+                            class="max-w-[216px] max-h-[126px] mx-auto"
+                        />
+                    </div>
+                </div>
+                <div>
+                    <div class="flex justify-center items-center h-[126px]">
+                        <img
+                            src="{{ theme.uri }}/assets/images/assets/images/vehicle-branding/accreditations/avery-dennison7859.logowik.com.webp"
+                            alt="Asda"
+                            class="max-w-[216px] max-h-[126px] mx-auto"
+                        />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Easy as steps -->
+    <section class="py-10 lg:py-20 bg-dark-green">
+        <div class="container">
+            <h2 class="text-white font-bold text-[45px] pb-10">
+                AS EASY AS 1, 2, 3...
+            </h2>
+
+            <div
+                class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-8 lg:grid-rows-2"
+            >
+                <div class="col-span-1 border-t border-white">
+                    <div class="py-6 lg:py-8">
+                        <span class="text-white text-lg inline-block pr-1"
+                            >01</span
+                        >
+                        <span
+                            class="text-light-green font-bold text-[32px] leading-[40px]"
+                            >Initial <br />Consultation.</span
+                        >
+
+                        <p class="text-white pt-2">
+                            We begin with an in-depth discussion to
+                            understand your specific needs, goals, and the
+                            scope of your project.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-span-1 border-t border-white">
+                    <div class="py-6 lg:py-8">
+                        <span class="text-white text-lg inline-block pr-1"
+                            >02</span
+                        >
+                        <span
+                            class="text-light-green font-bold text-[32px] leading-[40px]"
+                            >Design & <br />development.</span
+                        >
+
+                        <p class="text-white pt-2">
+                            After our consultation, we'll create a visual
+                            mockup for your review and collaboration. We'll
+                            refine it together until you're thrilled with
+                            the design.
+                        </p>
+                    </div>
+                </div>
+
+                <div
+                    class="col-span-1 border-t border-white lg:row-start-2 lg:col-start-2"
+                >
+                    <div class="py-6 lg:py-8">
+                        <span class="text-white text-lg inline-block pr-1"
+                            >03</span
+                        >
+                        <span
+                            class="text-light-green font-bold text-[32px] leading-[40px]"
+                            >Production & <br />Manufacturing.</span
+                        >
+
+                        <p class="text-white pt-2">
+                            Upon your sign-off, we'll move your project into
+                            production for printing/manufacturing.
+                        </p>
+                    </div>
+                </div>
+
+                <div
+                    class="col-span-1 border-t border-white lg:row-start-2 lg:col-start-3"
+                >
+                    <div class="py-6 lg:py-8">
+                        <span class="text-white text-lg inline-block pr-1"
+                            >04</span
+                        >
+                        <span
+                            class="text-light-green font-bold text-[32px] leading-[40px]"
+                            >Install & <br />Aftercare.</span
+                        >
+
+                        <p class="text-white pt-2">
+                            After the professional installation of your
+                            graphics, we're committed to ensuring your
+                            satisfaction. We will be available to assist you
+                            further should you require us.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Transparent pricing -->
+    <section class="py-10 lg:py-20 bg-[#105255]">
+        <div class="container">
+            <div class="flex flex-wrap">
+                <div class="w-full lg:w-1/2">
+                    <h2
+                        class="font-bold text-[32px] leading-[35px] lg:text-[65px] lg:leading-[57px]"
+                    >
+                        <span class="text-white">TRANSPARENT<br /></span
+                        ><span class="text-light-green"
+                            >PRICING GUIDES.</span
+                        >
+                    </h2>
+
+                    <div
+                        class="grid grid-cols-2 gap-10 text-white font-semibold pt-10 lg:pt-12"
+                    >
+                        <span
+                            class="text-[22px] leading-[26px] col-span-1 flex gap-2"
+                        >
+                            <span>&#x2022;</span>
+                            <span>
+                                <span class="text-light-green"
+                                    >A clear breakdown of costs</span
+                                >
+                                for materials, design, and installation.
+                            </span>
+                        </span>
+
+                        <span
+                            class="text-[22px] leading-[26px] col-span-1 flex gap-2"
+                        >
+                            <span>&#x2022;</span>
+                            <span>
+                                Different options to
+                                <span class="text-light-green"
+                                    >fit your budget</span
+                                >
+                                and branding goals.
+                            </span>
+                        </span>
+
+                        <span
+                            class="text-[22px] leading-[26px] col-span-1 flex gap-2"
+                        >
+                            <span>&#x2022;</span>
+                            <span>
+                                <span class="text-light-green"
+                                    >Design packages</span
+                                >
+                                to suit your budget.
+                            </span>
+                        </span>
+
+                        <span
+                            class="text-[22px] leading-[26px] col-span-1 flex gap-2"
+                        >
+                            <span>&#x2022;</span>
+                            <span>
+                                <span class="text-light-green"
+                                    >No pressure sales</span
+                                >
+                                tactics, just honest communication.
+                            </span>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="w-full lg:w-1/2 pt-10 lg:pt-0">
+                    <img
+                        src="{{ theme.uri }}/assets/images/assets/images/vehicle-branding/download-brochures.png"
+                        alt="Download brochures"
+                    />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Infinite marquee -->
+    <section class="bg-dark-green pt-14 lg:pt-20 pb-2 lg:pb-8">
+        <div
+            class="marquee relative w-full max-w-full h-[124px] lg:h-[160px] overflow-x-hidden"
+        >
+            <div
+                class="track absolute whitespace-nowrap will-change-transform"
+            >
+                <div class="content font-bold text-white flex items-center">
+                    <span class="text-[60px] lg:text-[80px]">DESIGN</span>
+                    <i class="fa-solid fa-circle px-6 text-light-green"></i>
+                    <span class="text-[60px] lg:text-[80px]">PRINT</span>
+                    <i class="fa-solid fa-circle px-6 text-light-green"></i>
+                    <span class="text-[60px] lg:text-[80px]">SIGNAGE</span>
+                    <i class="fa-solid fa-circle px-6 text-light-green"></i>
+                    <span class="text-[60px] lg:text-[80px]"
+                        >VEHICLE BRANDING</span
+                    >
+                    <i class="fa-solid fa-circle px-6 text-light-green"></i>
+                    <span class="text-[60px] lg:text-[80px]"
+                        >WINDOW GRAPHICS</span
+                    >
+                    <i class="fa-solid fa-circle px-6 text-light-green"></i>
+                    <span class="ttext-[60px] lg:text-[80px]"
+                        >WALL MURALS</span
+                    >
+                    <i class="fa-solid fa-circle px-6 text-light-green"></i>
+                    <span class="ttext-[60px] lg:text-[80px]">DESIGN</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Autoplaying images slider -->
+    <section class="flex h-[260px] lg:h-[300px] overflow-hidden">
+        <div class="hidden lg:block w-1/3">
+            <div class="js-autoplaying-slider-1">
+                <div class="image h-[300px] overflow-hidden">
+                    <img
+                        src="{{ theme.uri }}/assets/images/assets/images/slider/farmer-copleys.jpg"
+                        alt="Farmer copleys"
+                        class="object-cover object-center w-full h-full min-h-[300px]"
+                    />
+                </div>
+                <div class="image h-[300px] overflow-hidden">
+                    <img
+                        src="{{ theme.uri }}/assets/images/assets/images/slider/solarfast.jpg"
+                        alt="Showbar"
+                        class="object-cover object-center w-full h-full min-h-[300px]"
+                    />
+                </div>
+                <div class="image h-[300px] overflow-hidden">
+                    <img
+                        src="{{ theme.uri }}/assets/images/assets/images/slider/jd-gyms.jpg"
+                        alt="Showbar"
+                        class="object-cover object-center w-full h-full min-h-[300px]"
+                    />
+                </div>
+            </div>
+        </div>
+        <div class="hidden lg:block w-1/3">
+            <div class="js-autoplaying-slider-2">
+                <div class="image h-[300px] overflow-hidden">
+                    <img
+                        src="{{ theme.uri }}/assets/images/assets/images/slider/showbar.png"
+                        alt="Showbar"
+                        class="object-cover object-center w-full h-full min-h-[300px]"
+                    />
+                </div>
+                <div class="image h-[300px] overflow-hidden">
+                    <img
+                        src="{{ theme.uri }}/assets/images/assets/images/slider/honey.jpg"
+                        alt="Solarfast"
+                        class="object-cover object-center w-full h-full min-h-[300px]"
+                    />
+                </div>
+                <div class="image h-[300px] overflow-hidden">
+                    <img
+                        src="{{ theme.uri }}/assets/images/assets/images/slider/honey.jpg"
+                        alt="Solarfast"
+                        class="object-cover object-center w-full h-full min-h-[300px]"
+                    />
+                </div>
+                <div class="image h-[300px] overflow-hidden">
+                    <img
+                        src="{{ theme.uri }}/assets/images/assets/images/slider/Ocho_Hair.jpg"
+                        alt="Solarfast"
+                        class="object-cover object-center w-full h-full min-h-[300px]"
+                    />
+                </div>
+            </div>
+        </div>
+        <div class="hidden lg:block w-1/3">
+            <div class="js-autoplaying-slider-3">
+                <div class="image h-[300px] overflow-hidden">
+                    <img
+                        src="{{ theme.uri }}/assets/images/assets/images/slider/Van_Part-Wrap-3.jpg"
+                        alt="Solarfast"
+                        class="object-cover object-center w-full h-full min-h-[300px]"
+                    />
+                </div>
+                <div class="image h-[300px] overflow-hidden">
+                    <img
+                        src="{{ theme.uri }}/assets/images/assets/images/slider/Excel-Generators-3.jpg"
+                        class="object-cover object-center w-full h-full min-h-[300px]"
+                    />
+                </div>
+                <div class="image h-[300px] overflow-hidden">
+                    <img
+                        src="{{ theme.uri }}/assets/images/assets/images/slider/Wall_Wrap_Brand_Works-3.jpg"
+                        alt="Solarfast"
+                        class="object-cover object-center w-full h-full min-h-[300px]"
+                    />
+                </div>
+            </div>
+        </div>
+        <div class="block lg:hidden w-full">
+            <div class="js-autoplaying-slider-mobile">
+                <div class="image h-[260px] overflow-hidden">
+                    <img
+                        src="{{ theme.uri }}/assets/images/assets/images/slider/farmer-copleys.jpg"
+                        alt="Farmer copleys"
+                        class="object-cover object-center w-full h-full min-h-[260px]"
+                    />
+                </div>
+                <div class="image h-[260px] overflow-hidden">
+                    <img
+                        src="{{ theme.uri }}/assets/images/assets/images/slider/showbar.png"
+                        alt="Showbar"
+                        class="object-cover object-center w-full h-full min-h-[260px]"
+                    />
+                </div>
+                <div class="image h-[260px] overflow-hidden">
+                    <img
+                        src="{{ theme.uri }}/assets/images/assets/images/slider/solarfast.jpg"
+                        alt="Solarfast"
+                        class="object-cover object-center w-full h-full min-h-[260px]"
+                    />
+                </div>
+                <div class="image h-[260px] overflow-hidden">
+                    <img
+                        src="{{ theme.uri }}/assets/images/assets/images/slider/Wall_Wrap_Brand_Works-3.jpg"
+                        alt="Solarfast"
+                        class="object-cover object-center w-full h-full min-h-[260px]"
+                    />
+                </div>
+                <div class="image h-[260px] overflow-hidden">
+                    <img
+                        src="{{ theme.uri }}/assets/images/assets/images/slider/honey.jpg"
+                        alt="Solarfast"
+                        class="object-cover object-center w-full h-full min-h-[260px]"
+                    />
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}
