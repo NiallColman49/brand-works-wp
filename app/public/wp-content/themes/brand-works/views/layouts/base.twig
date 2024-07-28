@@ -7,7 +7,7 @@
     <body class="{{ body_class }}">
         {{ function('wp_body_open') }}
         <a class="skip-link screen-reader-text" href="#content">{{ _e('Skip to content') }}</a>
-        <header class="header">
+        <header class="header z-50 shadow-lg shadow-[#000]/20 sticky top-0">
             {% block header %}
                 <div class="wrapper">
                     <nav id="nav-main" class="nav-main">
