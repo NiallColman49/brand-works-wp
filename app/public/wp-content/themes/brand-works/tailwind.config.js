@@ -13,6 +13,7 @@ module.exports = {
         colors: {
             'light-green': '#C6D92C',
             'dark-green': '#003C3F',
+            white: '#FFFFFF',
         },
     },
     plugins: [],
